@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
+		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
+		BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95561D15AAE6005BF144 /* 0-C.tga */; };
+		BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95571D15AAE6005BF144 /* 1-A.tga */; };
+		BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95581D15AAE6005BF144 /* 1-B.tga */; };
+		BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95591D15AAE6005BF144 /* 1-C.tga */; };
+		BA7F957B1D15AAE6005BF144 /* 10-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955A1D15AAE6005BF144 /* 10-A.tga */; };
+		BA7F957C1D15AAE6005BF144 /* 10-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955B1D15AAE6005BF144 /* 10-B.tga */; };
+		BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955C1D15AAE6005BF144 /* 10-C.tga */; };
+		BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955D1D15AAE6005BF144 /* 2-A.tga */; };
+		BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955E1D15AAE6005BF144 /* 2-B.tga */; };
+		BA7F95801D15AAE6005BF144 /* 2-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955F1D15AAE6005BF144 /* 2-C.tga */; };
+		BA7F95811D15AAE6005BF144 /* 3-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95601D15AAE6005BF144 /* 3-A.tga */; };
+		BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95611D15AAE6005BF144 /* 3-B.tga */; };
+		BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95621D15AAE6005BF144 /* 3-C.tga */; };
+		BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95631D15AAE6005BF144 /* 4-A.tga */; };
+		BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95641D15AAE6005BF144 /* 4-B.tga */; };
+		BA7F95861D15AAE6005BF144 /* 4-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95651D15AAE6005BF144 /* 4-C.tga */; };
+		BA7F95871D15AAE6005BF144 /* 5-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95661D15AAE6005BF144 /* 5-A.tga */; };
+		BA7F95881D15AAE6005BF144 /* 5-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95671D15AAE6005BF144 /* 5-B.tga */; };
+		BA7F95891D15AAE6005BF144 /* 5-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95681D15AAE6005BF144 /* 5-C.tga */; };
+		BA7F958A1D15AAE6005BF144 /* 6-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95691D15AAE6005BF144 /* 6-A.tga */; };
+		BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956A1D15AAE6005BF144 /* 6-B.tga */; };
+		BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956B1D15AAE6005BF144 /* 6-C.tga */; };
+		BA7F958D1D15AAE6005BF144 /* 7-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956C1D15AAE6005BF144 /* 7-A.tga */; };
+		BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956D1D15AAE6005BF144 /* 7-B.tga */; };
+		BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956E1D15AAE6005BF144 /* 7-C.tga */; };
+		BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956F1D15AAE6005BF144 /* 8-A.tga */; };
+		BA7F95911D15AAE6005BF144 /* 8-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95701D15AAE6005BF144 /* 8-B.tga */; };
+		BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95711D15AAE6005BF144 /* 8-C.tga */; };
+		BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95721D15AAE6005BF144 /* 9-A.tga */; };
+		BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95731D15AAE6005BF144 /* 9-B.tga */; };
+		BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95741D15AAE6005BF144 /* 9-C.tga */; };
 		BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */; };
 		BB2AB1FD171DEE740044DACE /* AddEditAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */; };
 		BB34F1031703CAD3006EF991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB34F1021703CAD3006EF991 /* UIKit.framework */; };
@@ -28,6 +61,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
+		BA7F95551D15AAE6005BF144 /* 0-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-B.tga"; sourceTree = "<group>"; };
+		BA7F95561D15AAE6005BF144 /* 0-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-C.tga"; sourceTree = "<group>"; };
+		BA7F95571D15AAE6005BF144 /* 1-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-A.tga"; sourceTree = "<group>"; };
+		BA7F95581D15AAE6005BF144 /* 1-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-B.tga"; sourceTree = "<group>"; };
+		BA7F95591D15AAE6005BF144 /* 1-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-C.tga"; sourceTree = "<group>"; };
+		BA7F955A1D15AAE6005BF144 /* 10-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-A.tga"; sourceTree = "<group>"; };
+		BA7F955B1D15AAE6005BF144 /* 10-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-B.tga"; sourceTree = "<group>"; };
+		BA7F955C1D15AAE6005BF144 /* 10-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-C.tga"; sourceTree = "<group>"; };
+		BA7F955D1D15AAE6005BF144 /* 2-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-A.tga"; sourceTree = "<group>"; };
+		BA7F955E1D15AAE6005BF144 /* 2-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-B.tga"; sourceTree = "<group>"; };
+		BA7F955F1D15AAE6005BF144 /* 2-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-C.tga"; sourceTree = "<group>"; };
+		BA7F95601D15AAE6005BF144 /* 3-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-A.tga"; sourceTree = "<group>"; };
+		BA7F95611D15AAE6005BF144 /* 3-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-B.tga"; sourceTree = "<group>"; };
+		BA7F95621D15AAE6005BF144 /* 3-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-C.tga"; sourceTree = "<group>"; };
+		BA7F95631D15AAE6005BF144 /* 4-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-A.tga"; sourceTree = "<group>"; };
+		BA7F95641D15AAE6005BF144 /* 4-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-B.tga"; sourceTree = "<group>"; };
+		BA7F95651D15AAE6005BF144 /* 4-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-C.tga"; sourceTree = "<group>"; };
+		BA7F95661D15AAE6005BF144 /* 5-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-A.tga"; sourceTree = "<group>"; };
+		BA7F95671D15AAE6005BF144 /* 5-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-B.tga"; sourceTree = "<group>"; };
+		BA7F95681D15AAE6005BF144 /* 5-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-C.tga"; sourceTree = "<group>"; };
+		BA7F95691D15AAE6005BF144 /* 6-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-A.tga"; sourceTree = "<group>"; };
+		BA7F956A1D15AAE6005BF144 /* 6-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-B.tga"; sourceTree = "<group>"; };
+		BA7F956B1D15AAE6005BF144 /* 6-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-C.tga"; sourceTree = "<group>"; };
+		BA7F956C1D15AAE6005BF144 /* 7-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-A.tga"; sourceTree = "<group>"; };
+		BA7F956D1D15AAE6005BF144 /* 7-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-B.tga"; sourceTree = "<group>"; };
+		BA7F956E1D15AAE6005BF144 /* 7-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-C.tga"; sourceTree = "<group>"; };
+		BA7F956F1D15AAE6005BF144 /* 8-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-A.tga"; sourceTree = "<group>"; };
+		BA7F95701D15AAE6005BF144 /* 8-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-B.tga"; sourceTree = "<group>"; };
+		BA7F95711D15AAE6005BF144 /* 8-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-C.tga"; sourceTree = "<group>"; };
+		BA7F95721D15AAE6005BF144 /* 9-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-A.tga"; sourceTree = "<group>"; };
+		BA7F95731D15AAE6005BF144 /* 9-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-B.tga"; sourceTree = "<group>"; };
+		BA7F95741D15AAE6005BF144 /* 9-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-C.tga"; sourceTree = "<group>"; };
 		BB2AB1F8171DCD4D0044DACE /* AlarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmObject.h; sourceTree = "<group>"; };
 		BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
 		BB2AB1FB171DEE740044DACE /* AddEditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditAlarmViewController.h; sourceTree = "<group>"; };
@@ -72,6 +138,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F95541D15AAE6005BF144 /* 0-A.tga */,
+				BA7F95551D15AAE6005BF144 /* 0-B.tga */,
+				BA7F95561D15AAE6005BF144 /* 0-C.tga */,
+				BA7F95571D15AAE6005BF144 /* 1-A.tga */,
+				BA7F95581D15AAE6005BF144 /* 1-B.tga */,
+				BA7F95591D15AAE6005BF144 /* 1-C.tga */,
+				BA7F955A1D15AAE6005BF144 /* 10-A.tga */,
+				BA7F955B1D15AAE6005BF144 /* 10-B.tga */,
+				BA7F955C1D15AAE6005BF144 /* 10-C.tga */,
+				BA7F955D1D15AAE6005BF144 /* 2-A.tga */,
+				BA7F955E1D15AAE6005BF144 /* 2-B.tga */,
+				BA7F955F1D15AAE6005BF144 /* 2-C.tga */,
+				BA7F95601D15AAE6005BF144 /* 3-A.tga */,
+				BA7F95611D15AAE6005BF144 /* 3-B.tga */,
+				BA7F95621D15AAE6005BF144 /* 3-C.tga */,
+				BA7F95631D15AAE6005BF144 /* 4-A.tga */,
+				BA7F95641D15AAE6005BF144 /* 4-B.tga */,
+				BA7F95651D15AAE6005BF144 /* 4-C.tga */,
+				BA7F95661D15AAE6005BF144 /* 5-A.tga */,
+				BA7F95671D15AAE6005BF144 /* 5-B.tga */,
+				BA7F95681D15AAE6005BF144 /* 5-C.tga */,
+				BA7F95691D15AAE6005BF144 /* 6-A.tga */,
+				BA7F956A1D15AAE6005BF144 /* 6-B.tga */,
+				BA7F956B1D15AAE6005BF144 /* 6-C.tga */,
+				BA7F956C1D15AAE6005BF144 /* 7-A.tga */,
+				BA7F956D1D15AAE6005BF144 /* 7-B.tga */,
+				BA7F956E1D15AAE6005BF144 /* 7-C.tga */,
+				BA7F956F1D15AAE6005BF144 /* 8-A.tga */,
+				BA7F95701D15AAE6005BF144 /* 8-B.tga */,
+				BA7F95711D15AAE6005BF144 /* 8-C.tga */,
+				BA7F95721D15AAE6005BF144 /* 9-A.tga */,
+				BA7F95731D15AAE6005BF144 /* 9-B.tga */,
+				BA7F95741D15AAE6005BF144 /* 9-C.tga */,
+			);
+			path = "手机闹钟数字";
+			sourceTree = "<group>";
+		};
 		BB34F0F61703CAD3006EF991 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +222,7 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
 				BB8E4A591721F8E6009AA32E /* Custom Fonts */,
 				BB8E4A581721F8DB009AA32E /* Sounds */,
 				BB34F10A1703CAD4006EF991 /* AlarmClock-Info.plist */,
@@ -220,13 +327,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7F95911D15AAE6005BF144 /* 8-B.tga in Resources */,
+				BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */,
+				BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */,
+				BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */,
+				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
+				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
 				BB34F10D1703CAD4006EF991 /* InfoPlist.strings in Resources */,
+				BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */,
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
+				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
+				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
+				BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */,
+				BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */,
+				BA7F95811D15AAE6005BF144 /* 3-A.tga in Resources */,
+				BA7F95881D15AAE6005BF144 /* 5-B.tga in Resources */,
+				BA7F95891D15AAE6005BF144 /* 5-C.tga in Resources */,
+				BA7F957C1D15AAE6005BF144 /* 10-B.tga in Resources */,
+				BA7F95861D15AAE6005BF144 /* 4-C.tga in Resources */,
 				BB34F1171703CAD4006EF991 /* Default@2x.png in Resources */,
+				BA7F957B1D15AAE6005BF144 /* 10-A.tga in Resources */,
+				BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */,
+				BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */,
+				BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */,
+				BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */,
+				BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */,
+				BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */,
+				BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */,
+				BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */,
+				BA7F958A1D15AAE6005BF144 /* 6-A.tga in Resources */,
+				BA7F958D1D15AAE6005BF144 /* 7-A.tga in Resources */,
+				BA7F95801D15AAE6005BF144 /* 2-C.tga in Resources */,
+				BA7F95871D15AAE6005BF144 /* 5-A.tga in Resources */,
 				BB34F1191703CAD4006EF991 /* Default-568h@2x.png in Resources */,
 				BB34F11C1703CAD4006EF991 /* MainStoryboard.storyboard in Resources */,
 				BB34F1261703CB2B006EF991 /* digital-7.ttf in Resources */,
+				BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */,
 				BBFD0EC8171FA49D00F7C664 /* Best_Morning_Alarm.m4r in Resources */,
+				BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */,
+				BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */,
+				BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
