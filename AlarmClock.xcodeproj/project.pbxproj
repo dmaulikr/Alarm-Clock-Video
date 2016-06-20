@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */; };
+		9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */; };
+		9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202DC731D181FF3004ACA8F /* VideoPlayerController.m */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
 		BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95561D15AAE6005BF144 /* 0-C.tga */; };
@@ -61,6 +64,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0002.mov; sourceTree = "<group>"; };
+		9202DC721D181FF3004ACA8F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
+		9202DC731D181FF3004ACA8F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
 		BA7F95551D15AAE6005BF144 /* 0-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-B.tga"; sourceTree = "<group>"; };
 		BA7F95561D15AAE6005BF144 /* 0-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-C.tga"; sourceTree = "<group>"; };
@@ -128,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */,
 				BBFD0ECA171FA4CF00F7C664 /* AVFoundation.framework in Frameworks */,
 				BB34F1031703CAD3006EF991 /* UIKit.framework in Frameworks */,
 				BB34F1051703CAD3006EF991 /* Foundation.framework in Frameworks */,
@@ -138,6 +146,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9202DC6C1D181D5D004ACA8F /* video */ = {
+			isa = PBXGroup;
+			children = (
+				9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
 		BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +214,7 @@
 		BB34F1011703CAD3006EF991 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */,
 				BBFD0EC9171FA4CF00F7C664 /* AVFoundation.framework */,
 				BB34F1021703CAD3006EF991 /* UIKit.framework */,
 				BB34F1041703CAD3006EF991 /* Foundation.framework */,
@@ -225,6 +242,7 @@
 				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
 				BB8E4A591721F8E6009AA32E /* Custom Fonts */,
 				BB8E4A581721F8DB009AA32E /* Sounds */,
+				9202DC6C1D181D5D004ACA8F /* video */,
 				BB34F10A1703CAD4006EF991 /* AlarmClock-Info.plist */,
 				BB34F10B1703CAD4006EF991 /* InfoPlist.strings */,
 				BB34F10E1703CAD4006EF991 /* main.m */,
@@ -272,6 +290,8 @@
 				BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */,
 				BBFD0ECB171FA6F100F7C664 /* AlarmLabelEditViewController.h */,
 				BBFD0ECC171FA6F200F7C664 /* AlarmLabelEditViewController.m */,
+				9202DC721D181FF3004ACA8F /* VideoPlayerController.h */,
+				9202DC731D181FF3004ACA8F /* VideoPlayerController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -304,6 +324,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jon Bauer";
+				TargetAttributes = {
+					BB34F0FE1703CAD3006EF991 = {
+						DevelopmentTeam = Z3VGL34GCF;
+					};
+				};
 			};
 			buildConfigurationList = BB34F0FA1703CAD3006EF991 /* Build configuration list for PBXProject "AlarmClock" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -338,6 +363,7 @@
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
 				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
 				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
+				9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */,
 				BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */,
 				BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */,
 				BA7F95811D15AAE6005BF144 /* 3-A.tga in Resources */,
@@ -379,6 +405,7 @@
 			files = (
 				BB34F10F1703CAD4006EF991 /* main.m in Sources */,
 				BB34F1131703CAD4006EF991 /* AppDelegate.m in Sources */,
+				9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */,
 				BB34F11F1703CAD4006EF991 /* HomeViewController.m in Sources */,
 				BBB1FA95171DC61800632A28 /* AlarmListTableController.m in Sources */,
 				BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */,
@@ -474,12 +501,14 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;
 			};
@@ -490,12 +519,14 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;
 			};

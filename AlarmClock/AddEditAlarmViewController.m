@@ -293,4 +293,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation == UIDeviceOrientationPortrait;
+}
 @end

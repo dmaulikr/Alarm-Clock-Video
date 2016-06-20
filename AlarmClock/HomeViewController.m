@@ -6,6 +6,8 @@
 
 #import "HomeViewController.h"
 #import "AppDelegate.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "VideoPlayerController.h"
 
 @interface HomeViewController ()
 
@@ -91,4 +93,30 @@
     }
 }
 
+- (IBAction)playVideoAction:(id)sender {
+    
+    NSBundle *myBundle = [NSBundle mainBundle];
+    NSString* path = [myBundle pathForResource:@"IMG_0002" ofType:@"mov"];
+    
+    VideoPlayerController *videoPlayerController = [[VideoPlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
+    
+    videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self presentViewController:videoPlayerController animated:YES completion:^(){}];
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation == UIDeviceOrientationPortrait;
+}
 @end

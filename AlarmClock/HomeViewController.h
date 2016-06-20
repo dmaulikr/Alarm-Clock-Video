@@ -16,4 +16,5 @@
 @property(nonatomic) BOOL alarmGoingOff;
 
 
+- (IBAction)playVideoAction:(id)sender;
 @end
