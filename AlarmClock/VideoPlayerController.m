@@ -11,15 +11,16 @@
 @interface VideoPlayerController()
 
 @property(strong,nonatomic)UIButton *closeButton;
-@property(strong,nonatomic)MPMoviePlayerViewController *videoView;
+@property(strong,nonatomic)MPMoviePlayerViewController *moviePlayerViewController;
+@property(strong,nonatomic)UIView *overlay;
 
 @end
 
 @implementation VideoPlayerController
 
--(id)initWithContentURL:(NSURL *)contentURL{
+-(id)init{
 
-    self = [super initWithContentURL:contentURL];
+    self = [super init];
     if(self){
     
     
@@ -30,35 +31,40 @@
 }
 -(void)initView{
     
-    UIView *aView = [[UIView alloc] initWithFrame:self.view.bounds];
-    [aView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
-    [self.view addSubview:aView];
+    NSBundle *myBundle = [NSBundle mainBundle];
+    NSString* path = [myBundle pathForResource:@"IMG_0002" ofType:@"mov"];
     
-    self.closeButton.alpha = 0;
+    self.moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
     
-    [self.view addSubview:self.closeButton];
-    
-    self.view.frame = CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.width);
-    self.view.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+    self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.width);
+    self.moviePlayerViewController.view.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
     CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
-    [self.view setTransform:transform];
+    [self.moviePlayerViewController.view setTransform:transform];
     
-    transform = CGAffineTransformMakeRotation(-M_PI/2);
-    [self.closeButton setTransform:transform];
-    self.closeButton.center = CGPointMake(self.view.bounds.size.width/2, self.closeButton.frame.size.height/2);
+    [self.view addSubview:self.moviePlayerViewController.view];
+    
     
     // play movie
-    MPMoviePlayerController *player = [self moviePlayer];
+    MPMoviePlayerController *player = [self.moviePlayerViewController moviePlayer];
     player.controlStyle = MPMovieControlStyleNone;
     player.shouldAutoplay = YES;
     player.repeatMode = MPMovieRepeatModeOne;
     [player setFullscreen:YES animated:YES];
     player.scalingMode = MPMovieScalingModeAspectFit;
     [player play];
-    
 
+    
+   
+    [self.view addSubview:self.overlay];
+    
+    self.closeButton.alpha = 0;
+    
+    [self.overlay addSubview:self.closeButton];
+    
+   
 }
 -(void)tap:(UITapGestureRecognizer *)gesture{
+    
 
     [UIView animateWithDuration:0.5f animations:^(){
     
@@ -83,11 +89,22 @@
     return _closeButton;
 
 }
+-(UIView *)overlay{
+
+    if(!_overlay){
+        
+        _overlay = [[UIView alloc] initWithFrame:self.view.bounds];
+        [_overlay addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
+        
+    }
+    
+    return _overlay;
+}
 -(void)closeAction:(UIButton *)sender{
 
     [self dismissViewControllerAnimated:YES completion:^{
         
-        [[self moviePlayer] stop];
+        [[self.moviePlayerViewController moviePlayer] stop];
     }];
 
 }
@@ -95,6 +112,7 @@
 
     _path = path;
 
+    
 }
 
 //- (UIInterfaceOrientationMask)supportedInterfaceOrientations

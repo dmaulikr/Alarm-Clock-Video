@@ -10,6 +10,18 @@
 		9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */; };
 		9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */; };
 		9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202DC731D181FF3004ACA8F /* VideoPlayerController.m */; };
+		9211BCAF1D190B160064F049 /* UIImage+Targa.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211BCAE1D190B160064F049 /* UIImage+Targa.m */; };
+		9211BCBC1D195A560064F049 /* 0-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB11D195A560064F049 /* 0-A.png */; };
+		9211BCBD1D195A560064F049 /* 1-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB21D195A560064F049 /* 1-A.png */; };
+		9211BCBE1D195A560064F049 /* 10-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB31D195A560064F049 /* 10-A.png */; };
+		9211BCBF1D195A560064F049 /* 2-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB41D195A560064F049 /* 2-A.png */; };
+		9211BCC01D195A560064F049 /* 3-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB51D195A560064F049 /* 3-A.png */; };
+		9211BCC11D195A560064F049 /* 4-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB61D195A560064F049 /* 4-A.png */; };
+		9211BCC21D195A560064F049 /* 5-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB71D195A560064F049 /* 5-A.png */; };
+		9211BCC31D195A560064F049 /* 6-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB81D195A560064F049 /* 6-A.png */; };
+		9211BCC41D195A560064F049 /* 7-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB91D195A560064F049 /* 7-A.png */; };
+		9211BCC51D195A560064F049 /* 8-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBA1D195A560064F049 /* 8-A.png */; };
+		9211BCC61D195A560064F049 /* 9-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBB1D195A560064F049 /* 9-A.png */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
 		BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95561D15AAE6005BF144 /* 0-C.tga */; };
@@ -68,6 +80,19 @@
 		9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0002.mov; sourceTree = "<group>"; };
 		9202DC721D181FF3004ACA8F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
 		9202DC731D181FF3004ACA8F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
+		9211BCAD1D190B160064F049 /* UIImage+Targa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Targa.h"; sourceTree = "<group>"; };
+		9211BCAE1D190B160064F049 /* UIImage+Targa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Targa.m"; sourceTree = "<group>"; };
+		9211BCB11D195A560064F049 /* 0-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-A.png"; sourceTree = "<group>"; };
+		9211BCB21D195A560064F049 /* 1-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-A.png"; sourceTree = "<group>"; };
+		9211BCB31D195A560064F049 /* 10-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-A.png"; sourceTree = "<group>"; };
+		9211BCB41D195A560064F049 /* 2-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-A.png"; sourceTree = "<group>"; };
+		9211BCB51D195A560064F049 /* 3-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-A.png"; sourceTree = "<group>"; };
+		9211BCB61D195A560064F049 /* 4-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-A.png"; sourceTree = "<group>"; };
+		9211BCB71D195A560064F049 /* 5-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-A.png"; sourceTree = "<group>"; };
+		9211BCB81D195A560064F049 /* 6-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-A.png"; sourceTree = "<group>"; };
+		9211BCB91D195A560064F049 /* 7-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-A.png"; sourceTree = "<group>"; };
+		9211BCBA1D195A560064F049 /* 8-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-A.png"; sourceTree = "<group>"; };
+		9211BCBB1D195A560064F049 /* 9-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-A.png"; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
 		BA7F95551D15AAE6005BF144 /* 0-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-B.tga"; sourceTree = "<group>"; };
 		BA7F95561D15AAE6005BF144 /* 0-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-C.tga"; sourceTree = "<group>"; };
@@ -152,6 +177,24 @@
 				9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */,
 			);
 			path = video;
+			sourceTree = "<group>";
+		};
+		9211BCB01D195A560064F049 /* Alarm_di */ = {
+			isa = PBXGroup;
+			children = (
+				9211BCB11D195A560064F049 /* 0-A.png */,
+				9211BCB21D195A560064F049 /* 1-A.png */,
+				9211BCB31D195A560064F049 /* 10-A.png */,
+				9211BCB41D195A560064F049 /* 2-A.png */,
+				9211BCB51D195A560064F049 /* 3-A.png */,
+				9211BCB61D195A560064F049 /* 4-A.png */,
+				9211BCB71D195A560064F049 /* 5-A.png */,
+				9211BCB81D195A560064F049 /* 6-A.png */,
+				9211BCB91D195A560064F049 /* 7-A.png */,
+				9211BCBA1D195A560064F049 /* 8-A.png */,
+				9211BCBB1D195A560064F049 /* 9-A.png */,
+			);
+			path = Alarm_di;
 			sourceTree = "<group>";
 		};
 		BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */ = {
@@ -239,6 +282,7 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9211BCB01D195A560064F049 /* Alarm_di */,
 				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
 				BB8E4A591721F8E6009AA32E /* Custom Fonts */,
 				BB8E4A581721F8DB009AA32E /* Sounds */,
@@ -292,6 +336,8 @@
 				BBFD0ECC171FA6F200F7C664 /* AlarmLabelEditViewController.m */,
 				9202DC721D181FF3004ACA8F /* VideoPlayerController.h */,
 				9202DC731D181FF3004ACA8F /* VideoPlayerController.m */,
+				9211BCAD1D190B160064F049 /* UIImage+Targa.h */,
+				9211BCAE1D190B160064F049 /* UIImage+Targa.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -352,17 +398,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9211BCBD1D195A560064F049 /* 1-A.png in Resources */,
+				9211BCC41D195A560064F049 /* 7-A.png in Resources */,
 				BA7F95911D15AAE6005BF144 /* 8-B.tga in Resources */,
+				9211BCC51D195A560064F049 /* 8-A.png in Resources */,
 				BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */,
 				BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */,
 				BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */,
 				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
 				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
 				BB34F10D1703CAD4006EF991 /* InfoPlist.strings in Resources */,
+				9211BCC11D195A560064F049 /* 4-A.png in Resources */,
 				BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */,
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
+				9211BCC61D195A560064F049 /* 9-A.png in Resources */,
 				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
 				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
+				9211BCC31D195A560064F049 /* 6-A.png in Resources */,
 				9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */,
 				BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */,
 				BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */,
@@ -377,20 +429,25 @@
 				BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */,
 				BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */,
 				BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */,
+				9211BCBE1D195A560064F049 /* 10-A.png in Resources */,
 				BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */,
 				BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */,
 				BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */,
 				BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */,
 				BA7F958A1D15AAE6005BF144 /* 6-A.tga in Resources */,
+				9211BCBC1D195A560064F049 /* 0-A.png in Resources */,
 				BA7F958D1D15AAE6005BF144 /* 7-A.tga in Resources */,
 				BA7F95801D15AAE6005BF144 /* 2-C.tga in Resources */,
+				9211BCC01D195A560064F049 /* 3-A.png in Resources */,
 				BA7F95871D15AAE6005BF144 /* 5-A.tga in Resources */,
+				9211BCBF1D195A560064F049 /* 2-A.png in Resources */,
 				BB34F1191703CAD4006EF991 /* Default-568h@2x.png in Resources */,
 				BB34F11C1703CAD4006EF991 /* MainStoryboard.storyboard in Resources */,
 				BB34F1261703CB2B006EF991 /* digital-7.ttf in Resources */,
 				BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */,
 				BBFD0EC8171FA49D00F7C664 /* Best_Morning_Alarm.m4r in Resources */,
 				BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */,
+				9211BCC21D195A560064F049 /* 5-A.png in Resources */,
 				BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */,
 				BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */,
 			);
@@ -407,6 +464,7 @@
 				BB34F1131703CAD4006EF991 /* AppDelegate.m in Sources */,
 				9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */,
 				BB34F11F1703CAD4006EF991 /* HomeViewController.m in Sources */,
+				9211BCAF1D190B160064F049 /* UIImage+Targa.m in Sources */,
 				BBB1FA95171DC61800632A28 /* AlarmListTableController.m in Sources */,
 				BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */,
 				BB2AB1FD171DEE740044DACE /* AddEditAlarmViewController.m in Sources */,

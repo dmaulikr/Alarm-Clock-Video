@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface VideoPlayerController : MPMoviePlayerViewController
+@interface VideoPlayerController : UIViewController
 
 @property(strong,nonatomic)NSString *path;
 
