@@ -56,6 +56,7 @@
 		BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95721D15AAE6005BF144 /* 9-A.tga */; };
 		BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95731D15AAE6005BF144 /* 9-B.tga */; };
 		BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95741D15AAE6005BF144 /* 9-C.tga */; };
+		BAB005771D199552009EC0B3 /* App_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB005761D199552009EC0B3 /* App_icon.png */; };
 		BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */; };
 		BB2AB1FD171DEE740044DACE /* AddEditAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */; };
 		BB34F1031703CAD3006EF991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB34F1021703CAD3006EF991 /* UIKit.framework */; };
@@ -129,6 +130,7 @@
 		BA7F95721D15AAE6005BF144 /* 9-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-A.tga"; sourceTree = "<group>"; };
 		BA7F95731D15AAE6005BF144 /* 9-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-B.tga"; sourceTree = "<group>"; };
 		BA7F95741D15AAE6005BF144 /* 9-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-C.tga"; sourceTree = "<group>"; };
+		BAB005761D199552009EC0B3 /* App_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_icon.png; sourceTree = "<group>"; };
 		BB2AB1F8171DCD4D0044DACE /* AlarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmObject.h; sourceTree = "<group>"; };
 		BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
 		BB2AB1FB171DEE740044DACE /* AddEditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditAlarmViewController.h; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAB005761D199552009EC0B3 /* App_icon.png */,
 				9211BCB01D195A560064F049 /* Alarm_di */,
 				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
 				BB8E4A591721F8E6009AA32E /* Custom Fonts */,
@@ -441,6 +444,7 @@
 				BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */,
 				BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */,
 				BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */,
+				BAB005771D199552009EC0B3 /* App_icon.png in Resources */,
 				BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */,
 				9211BCBE1D195A560064F049 /* 10-A.png in Resources */,
 				BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */,
