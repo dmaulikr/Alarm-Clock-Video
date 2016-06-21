@@ -34,7 +34,7 @@
     [runloop addTimer:timer forMode:UITrackingRunLoopMode];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self saveTgaImage];
+//    [self saveTgaImage];
 }
 
 - (void)viewWillAppear:(BOOL)animated

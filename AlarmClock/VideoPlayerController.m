@@ -7,12 +7,19 @@
 //
 
 #import "VideoPlayerController.h"
+#import "TPFTimerView.h"
+
+#define  timerViewHeight 44;
+#define  timerViewWidth 100;
 
 @interface VideoPlayerController()
 
 @property(strong,nonatomic)UIButton *closeButton;
 @property(strong,nonatomic)MPMoviePlayerViewController *moviePlayerViewController;
 @property(strong,nonatomic)UIView *overlay;
+
+@property(strong,nonatomic)TPFTimerView *bottomTimerView;
+@property(strong,nonatomic)TPFTimerView *topTimerView;
 
 @end
 
@@ -53,6 +60,9 @@
     player.scalingMode = MPMovieScalingModeAspectFit;
     [player play];
 
+    
+    [self.view addSubview:self.bottomTimerView];
+    [self.view addSubview:self.topTimerView];
     
    
     [self.view addSubview:self.overlay];
@@ -105,6 +115,8 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
         [[self.moviePlayerViewController moviePlayer] stop];
+        [_bottomTimerView stop];
+        [_topTimerView stop];
     }];
 
 }
@@ -112,6 +124,38 @@
 
     _path = path;
 
+    
+}
+
+#pragma getter
+
+-(TPFTimerView *)bottomTimerView{
+
+    if(!_bottomTimerView){
+
+        
+    _bottomTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,self.view.frame.size.height-44, 100, 44) imageType:ImageTypeA];
+    
+    
+    }
+
+    return _bottomTimerView;
+
+}
+
+-(TPFTimerView *)topTimerView{
+    
+    if(!_topTimerView){
+        
+        
+        _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,0, 100, 44) imageType:ImageTypeA];
+        
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
+        [_topTimerView setTransform:transform];
+    }
+    
+    return _topTimerView;
     
 }
 
