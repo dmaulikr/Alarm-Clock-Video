@@ -7,6 +7,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "UIWindow+PazLabs.h"
+#import "TPFInfoShareManager.h"
 
 @implementation AppDelegate
 
@@ -14,11 +15,7 @@
 
 - (void)setupWindow
 {
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-	HomeViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeView"];
-	rootViewController.alarmGoingOff = YES;
-    
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];    
     VideoPlayerController *videoPlayerController =  [[VideoPlayerController alloc] init];
     
 	self.window.rootViewController = videoPlayerController;
@@ -27,9 +24,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    _videoPlayerController =  [[VideoPlayerController alloc] init];
-    _videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         
@@ -42,10 +36,15 @@
     UILocalNotification *localNotif =
     [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     
+    TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+    
     if (localNotif)
     {
         [self setupWindow];
+        shareManager.fromCloseApp = YES;
     }
+    else
+        shareManager.fromCloseApp = NO;
         
     return YES;
 }
@@ -60,7 +59,8 @@
 //    [self.player prepareToPlay];
 //    [self.player play];
     
-//	[self setupWindow];
+    _videoPlayerController =  [[VideoPlayerController alloc] init];
+    _videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     /*for testing when we stupidly are setting duplicate alarms*/
     if ([self.window visibleViewController] == _videoPlayerController)

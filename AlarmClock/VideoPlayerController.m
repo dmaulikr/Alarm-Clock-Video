@@ -8,6 +8,8 @@
 
 #import "VideoPlayerController.h"
 #import "TPFTimerView.h"
+#import "TPFInfoShareManager.h"
+#import "HomeViewController.h"
 
 #define  timerViewHeight 44;
 #define  timerViewWidth 100;
@@ -85,6 +87,9 @@
     
    
 }
+
+#pragma private method
+
 -(void)tap:(UITapGestureRecognizer *)gesture{
     
 
@@ -98,40 +103,41 @@
     }];
 
 }
--(UIButton *)closeButton{
 
-    if(!_closeButton){
-    
-        _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
-        [_closeButton setTitle:@"退出" forState:UIControlStateNormal];
-        [_closeButton addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_closeButton setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.5]];
-    }
-   
-    return _closeButton;
-
-}
--(UIView *)overlay{
-
-    if(!_overlay){
-        
-        _overlay = [[UIView alloc] initWithFrame:self.view.bounds];
-        [_overlay addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
-        
-    }
-    
-    return _overlay;
-}
 -(void)closeAction:(UIButton *)sender{
 
+    TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+    
+    if(!shareManager.fromCloseApp)
+    
     [self dismissViewControllerAnimated:YES completion:^{
         
-        [[self.moviePlayerViewController moviePlayer] stop];
-        [_bottomTimerView stop];
-        [_topTimerView stop];
     }];
+    
+    else
+        [self goToHome];
 
+    
+    
+    [[self.moviePlayerViewController moviePlayer] stop];
+    [_bottomTimerView stop];
+    [_topTimerView stop];
+    
+    shareManager.fromCloseApp = false;
 }
+-(void)goToHome{
+
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    HomeViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeView"];
+    rootViewController.alarmGoingOff = NO;
+
+    [self presentViewController:rootViewController animated:YES completion:^{
+        
+    }];
+}
+
+#pragma setter
+
 -(void)setPath:(NSString *)path{
 
     _path = path;
@@ -170,6 +176,32 @@
     return _topTimerView;
     
 }
+-(UIButton *)closeButton{
+    
+    if(!_closeButton){
+        
+        _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+        [_closeButton setTitle:@"退出" forState:UIControlStateNormal];
+        [_closeButton addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_closeButton setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.5]];
+    }
+    
+    return _closeButton;
+    
+}
+-(UIView *)overlay{
+    
+    if(!_overlay){
+        
+        _overlay = [[UIView alloc] initWithFrame:self.view.bounds];
+        [_overlay addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
+        
+    }
+    
+    return _overlay;
+}
+
+
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
