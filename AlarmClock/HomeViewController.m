@@ -8,7 +8,6 @@
 #import "AppDelegate.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "VideoPlayerController.h"
-#import "UIImage+Targa.h"
 
 @interface HomeViewController ()
 
@@ -34,7 +33,6 @@
     [runloop addTimer:timer forMode:UITrackingRunLoopMode];
 	// Do any additional setup after loading the view, typically from a nib.
     
-//    [self saveTgaImage];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -118,46 +116,5 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return toInterfaceOrientation == UIDeviceOrientationPortrait;
-}
--(void)saveTgaImage{
-
-    for (int i =0; i<=10; i++) {
-        
-        NSString *AName = [NSString stringWithFormat:@"%d-A.tga",i];
-        NSString *BName = [NSString stringWithFormat:@"%d-B.tga",i];
-        NSString *CName = [NSString stringWithFormat:@"%d-C.tga",i];
-        
-        NSString *APath = [[NSBundle mainBundle] pathForResource:AName ofType:@""];
-        
-        UIImage *AImage = [UIImage imageFromTGAFile:APath];
-//        UIImage *BImage = [UIImage imageFromTGAFile:BName];
-//        UIImage *CImage = [UIImage imageFromTGAFile:CName];
-        
-        
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-        
-        NSString *documentsDirectory = [paths objectAtIndex:0];
-        
-        NSString *myDirectory = [documentsDirectory stringByAppendingPathComponent:@"/手机闹钟数字/"];
-        
-        NSString *filePath = [myDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%d-A.png",i]];
-        
-        
-        [UIImagePNGRepresentation(AImage) writeToFile:filePath atomically:YES];
-        
-        filePath = [myDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%d-B.png",i]];
-        
-        
-//        [UIImagePNGRepresentation(BImage) writeToFile:filePath atomically:YES];
-//        
-//        filePath = [myDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%d-C.png",i]];
-//        
-//        NSLog(@"documentsDirectory%@",filePath);
-//        
-//        [UIImagePNGRepresentation(CImage) writeToFile:filePath atomically:YES];
-        
-    }
 }
 @end

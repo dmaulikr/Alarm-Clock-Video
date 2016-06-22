@@ -10,7 +10,6 @@
 		9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */; };
 		9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */; };
 		9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202DC731D181FF3004ACA8F /* VideoPlayerController.m */; };
-		9211BCAF1D190B160064F049 /* UIImage+Targa.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211BCAE1D190B160064F049 /* UIImage+Targa.m */; };
 		9211BCBC1D195A560064F049 /* 0-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB11D195A560064F049 /* 0-A.png */; };
 		9211BCBD1D195A560064F049 /* 1-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB21D195A560064F049 /* 1-A.png */; };
 		9211BCBE1D195A560064F049 /* 10-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB31D195A560064F049 /* 10-A.png */; };
@@ -82,8 +81,6 @@
 		9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0002.mov; sourceTree = "<group>"; };
 		9202DC721D181FF3004ACA8F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
 		9202DC731D181FF3004ACA8F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
-		9211BCAD1D190B160064F049 /* UIImage+Targa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Targa.h"; sourceTree = "<group>"; };
-		9211BCAE1D190B160064F049 /* UIImage+Targa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Targa.m"; sourceTree = "<group>"; };
 		9211BCB11D195A560064F049 /* 0-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-A.png"; sourceTree = "<group>"; };
 		9211BCB21D195A560064F049 /* 1-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-A.png"; sourceTree = "<group>"; };
 		9211BCB31D195A560064F049 /* 10-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-A.png"; sourceTree = "<group>"; };
@@ -352,8 +349,6 @@
 				BBFD0ECC171FA6F200F7C664 /* AlarmLabelEditViewController.m */,
 				9202DC721D181FF3004ACA8F /* VideoPlayerController.h */,
 				9202DC731D181FF3004ACA8F /* VideoPlayerController.m */,
-				9211BCAD1D190B160064F049 /* UIImage+Targa.h */,
-				9211BCAE1D190B160064F049 /* UIImage+Targa.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -482,7 +477,6 @@
 				BB34F1131703CAD4006EF991 /* AppDelegate.m in Sources */,
 				9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */,
 				BB34F11F1703CAD4006EF991 /* HomeViewController.m in Sources */,
-				9211BCAF1D190B160064F049 /* UIImage+Targa.m in Sources */,
 				BBB1FA95171DC61800632A28 /* AlarmListTableController.m in Sources */,
 				BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */,
 				BB2AB1FD171DEE740044DACE /* AddEditAlarmViewController.m in Sources */,
