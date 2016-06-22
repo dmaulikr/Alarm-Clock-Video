@@ -14,11 +14,21 @@ typedef enum : NSUInteger {
     ImageTypeC,
 } ImageType;
 
+
+typedef enum : NSUInteger {
+    TimerPositionBottom,
+    TimerPositionTop,
+    TimerPositionLeft,
+    TimerPositionRight,
+    TimerPositionNormal
+} TimerPosition;
+
 @interface TPFTimerView : UIView
 
--(id)initWithFrame:(CGRect)frame imageType:(ImageType)type;
+-(id)initWithFrame:(CGRect)frame imageType:(ImageType)type timerPosition:(TimerPosition)timerPosition;
 
 @property(nonatomic)ImageType type;
+@property(nonatomic)TimerPosition timerPosition;
 
 -(void)stop;
 @end

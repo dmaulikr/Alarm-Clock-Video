@@ -28,13 +28,14 @@
 
 @implementation TPFTimerView
 
--(id)initWithFrame:(CGRect)frame imageType:(ImageType)type{
+-(id)initWithFrame:(CGRect)frame imageType:(ImageType)type timerPosition:(TimerPosition)timerPosition{
 
     self = [super initWithFrame:frame];
 
     if(self){
     
         _type = type;
+        _timerPosition = timerPosition;
         
         [self initView];
         
@@ -80,10 +81,23 @@
     int m1 = [[hourMinuteSecond substringWithRange:NSMakeRange(3, 1)] intValue];
     int m2 = [[hourMinuteSecond substringWithRange:NSMakeRange(4, 1)] intValue];
     
-    _hour1.image = [UIImage imageNamed:[self getImageName:h1]];
-    _hour2.image = [UIImage imageNamed:[self getImageName:h2]];
-    _minute1.image = [UIImage imageNamed:[self getImageName:m1]];
-    _minute2.image = [UIImage imageNamed:[self getImageName:m2]];
+    if(self.timerPosition == TimerPositionBottom || self.timerPosition == TimerPositionTop || self.timerPosition == [TimerPositionRight || self.timerPosition == TimerPositionLeft]){
+        
+        
+        
+        _minute2.image = [self getMirrorImage:h1];
+        _minute1.image = [self getMirrorImage:h2];;
+        _hour2.image = [self getMirrorImage:m1];;
+        _hour1.image = [self getMirrorImage:m2];
+    
+    }
+    else{
+
+        _hour1.image = [UIImage imageNamed:[self getImageName:h1]];
+        _hour2.image = [UIImage imageNamed:[self getImageName:h2]];
+        _minute1.image = [UIImage imageNamed:[self getImageName:m1]];
+        _minute2.image = [UIImage imageNamed:[self getImageName:m2]];
+    }
 
 }
 -(void)animatePoint{
@@ -128,6 +142,15 @@
     }
 
     return typeString;
+
+}
+-(UIImage *)getMirrorImage:(int)index{
+
+    UIImage *image = [UIImage imageNamed:[self getImageName:index]];
+    
+    return  [UIImage imageWithCGImage:image.CGImage
+                        scale:image.scale
+                  orientation:UIImageOrientationUpMirrored];
 
 }
 

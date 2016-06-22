@@ -82,7 +82,7 @@
         int height = 100;
         int widht = self.view.frame.size.width - 100;
         
-        _timerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(50, 100, widht, height) imageType:ImageTypeC];
+        _timerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(50, 100, widht, height) imageType:ImageTypeC timerPosition:TimerPositionNormal];
     
     }
 

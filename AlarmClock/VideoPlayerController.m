@@ -11,7 +11,7 @@
 #import "TPFInfoShareManager.h"
 #import "HomeViewController.h"
 
-#define  timerViewHeight 44;
+//#define  timerViewHeight 44;
 #define  timerViewWidth 100;
 
 @interface VideoPlayerController()
@@ -23,6 +23,11 @@
 
 @property(strong,nonatomic)TPFTimerView *bottomTimerView;
 @property(strong,nonatomic)TPFTimerView *topTimerView;
+
+@property(strong,nonatomic)TPFTimerView *rightTimerView;
+@property(strong,nonatomic)TPFTimerView *leftTimerView;
+
+@property(nonatomic)float timerViewHeight;
 
 @end
 
@@ -53,12 +58,14 @@
 
 -(void)initView{
     
+    _timerViewHeight = 44;
+    
     NSBundle *myBundle = [NSBundle mainBundle];
     NSString* path = [myBundle pathForResource:@"IMG_0002" ofType:@"mov"];
     
     self.moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
     
-    self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.width);
+    self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width);
     self.moviePlayerViewController.view.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
     CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
     [self.moviePlayerViewController.view setTransform:transform];
@@ -77,6 +84,8 @@
     
     [self.view addSubview:self.bottomTimerView];
     [self.view addSubview:self.topTimerView];
+    [self.view addSubview:self.rightTimerView];
+    [self.view addSubview:self.leftTimerView];
     
    
     [self.view addSubview:self.overlay];
@@ -151,8 +160,10 @@
 
     if(!_bottomTimerView){
 
+        float sub = (self.view.frame.size.height - self.view.frame.size.width)/2;
+        float y = self.view.frame.size.height-sub- _timerViewHeight;
         
-    _bottomTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,self.view.frame.size.height-44, 100, 44) imageType:ImageTypeA];
+    _bottomTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,y, 100, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionBottom];
     
     
     }
@@ -165,8 +176,9 @@
     
     if(!_topTimerView){
         
+         float sub = (self.view.frame.size.height - self.view.frame.size.width)/2;
         
-        _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,0, 100, 44) imageType:ImageTypeC];
+        _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,sub, 100,_timerViewHeight) imageType:ImageTypeC timerPosition:TimerPositionTop];
         
         
         CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
@@ -176,6 +188,41 @@
     return _topTimerView;
     
 }
+-(TPFTimerView *)rightTimerView{
+    
+    if(!_rightTimerView){
+        
+        
+        _rightTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0, 100, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionRight];
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI/2);
+        [self.rightTimerView setTransform:transform];
+        
+        _rightTimerView.center = CGPointMake(self.view.frame.size.width - _timerViewHeight/2,self.view.frame.size.height/2);
+    }
+    
+    return _rightTimerView;
+    
+}
+
+-(TPFTimerView *)leftTimerView{
+    
+    if(!_leftTimerView){
+        
+        
+        _leftTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,100,_timerViewHeight) imageType:ImageTypeC timerPosition:TimerPositionLeft];
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+        [_leftTimerView setTransform:transform];
+        
+        _leftTimerView.center = CGPointMake(_timerViewHeight/2,self.view.frame.size.height/2);
+        
+    }
+    
+    return _leftTimerView;
+    
+}
+
 -(UIButton *)closeButton{
     
     if(!_closeButton){
