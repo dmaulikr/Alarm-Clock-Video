@@ -200,10 +200,17 @@
     }
     
     newAlarmObject.label = self.label;
+    
+//    NSTimeZone *timeZone=[NSTimeZone systemTimeZone];
+//    NSInteger seconds=[timeZone secondsFromGMTForDate:timeToSetOff.date];
+//    NSDate *newDate=[timeToSetOff.date dateByAddingTimeInterval:seconds];
+    
+//    [self.timeToSetOff setTimeZone:[NSTimeZone localTimeZone]];
+    
     newAlarmObject.timeToSetOff = timeToSetOff.date;
     newAlarmObject.enabled = YES;
     
-    [self scheduleLocalNotificationWithDate:self.timeToSetOff.date atIndex:newAlarmObject.notificationID];
+    [self scheduleLocalNotificationWithDate:timeToSetOff.date atIndex:newAlarmObject.notificationID];
     
     if(self.editMode == NO){
         [alarmList addObject:newAlarmObject];
@@ -227,19 +234,15 @@
     if (!localNotification)
         return;
     
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"hh-mm -a";
-    NSDate* date = [dateFormatter dateFromString:[dateFormatter stringFromDate:timeToSetOff.date]];
-    
     localNotification.repeatInterval = NSDayCalendarUnit;
-    [localNotification setFireDate:date];
+    [localNotification setFireDate:fireDate];
     [localNotification setTimeZone:[NSTimeZone defaultTimeZone]];  
     // Setup alert notification
-    [localNotification setAlertBody:@"Alarm" ];
-    [localNotification setAlertAction:@"Open App"];
+    [localNotification setAlertBody:@"闹钟360" ];
+    [localNotification setAlertAction:@"滑动解锁打开APP"];
     [localNotification setHasAction:YES];
+    localNotification.soundName = @"Best_Morning_Alarm.m4r";
     
-    NSLog(@"%@", date);
     //This array maps the alarms uid to the index of the alarm so that we can cancel specific local notifications
 
     NSNumber* uidToStore = [NSNumber numberWithInt:indexOfObject];

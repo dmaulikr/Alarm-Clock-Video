@@ -6,6 +6,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import "UIWindow+PazLabs.h"
 
 @implementation AppDelegate
 
@@ -17,12 +18,25 @@
 	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
 	HomeViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeView"];
 	rootViewController.alarmGoingOff = YES;
-	self.window.rootViewController = rootViewController;
+    
+    VideoPlayerController *videoPlayerController =  [[VideoPlayerController alloc] init];
+    
+	self.window.rootViewController = videoPlayerController;
 	[self.window makeKeyAndVisible];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    _videoPlayerController =  [[VideoPlayerController alloc] init];
+    _videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        
+        [[UIApplication sharedApplication]  registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+        
+    }
+    
     //Prevents screen from locking
     [UIApplication sharedApplication].idleTimerDisabled = YES;    
     UILocalNotification *localNotif =
@@ -37,15 +51,38 @@
 }
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
+
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
+//    
+//    NSURL *file = [[NSURL alloc] initFileURLWithPath:path];   
+//    
+//    self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+//    [self.player prepareToPlay];
+//    [self.player play];
     
-    NSURL *file = [[NSURL alloc] initFileURLWithPath:path];   
+//	[self setupWindow];
     
-    self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
-    [self.player prepareToPlay];
-    [self.player play];
+    /*for testing when we stupidly are setting duplicate alarms*/
+    if ([self.window visibleViewController] == _videoPlayerController)
+        return;
     
-	[self setupWindow];
+    
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
+    {
+        //NSLog(@"didReceiveLocalNotification already in foreground, ring alarm");
+        /*we were already up. play the alarm and bring up the alarm view (stop/snooze)*/
+        
+        [self.window.visibleViewController presentViewController:_videoPlayerController animated:YES completion:nil];
+    }
+    else
+    {
+        /*we were in the background. bring dialog and schedule a snooze wakeup*/
+        //NSLog(@"didReceiveLocalNotification in background, alarm should have been ringing.");
+
+        [self.window.visibleViewController presentViewController:_videoPlayerController animated:YES completion:nil];
+
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

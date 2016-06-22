@@ -21,6 +21,8 @@
 		9211BCC41D195A560064F049 /* 7-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB91D195A560064F049 /* 7-A.png */; };
 		9211BCC51D195A560064F049 /* 8-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBA1D195A560064F049 /* 8-A.png */; };
 		9211BCC61D195A560064F049 /* 9-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBB1D195A560064F049 /* 9-A.png */; };
+		92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F9D02C1D1A5B050075A7E5 /* Images.xcassets */; };
+		92F9D0301D1A66680075A7E5 /* UIWindow+PazLabs.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
@@ -92,6 +94,9 @@
 		9211BCB91D195A560064F049 /* 7-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-A.png"; sourceTree = "<group>"; };
 		9211BCBA1D195A560064F049 /* 8-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-A.png"; sourceTree = "<group>"; };
 		9211BCBB1D195A560064F049 /* 9-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-A.png"; sourceTree = "<group>"; };
+		92F9D02C1D1A5B050075A7E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92F9D02E1D1A66680075A7E5 /* UIWindow+PazLabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PazLabs.h"; sourceTree = "<group>"; };
+		92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PazLabs.m"; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
@@ -132,7 +137,7 @@
 		BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
 		BB2AB1FB171DEE740044DACE /* AddEditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditAlarmViewController.h; sourceTree = "<group>"; };
 		BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditAlarmViewController.m; sourceTree = "<group>"; };
-		BB34F0FF1703CAD3006EF991 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB34F0FF1703CAD3006EF991 /* 闹钟360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "闹钟360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34F1021703CAD3006EF991 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB34F1041703CAD3006EF991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB34F1061703CAD3006EF991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -260,7 +265,7 @@
 		BB34F1001703CAD3006EF991 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB34F0FF1703CAD3006EF991 /* AlarmClock.app */,
+				BB34F0FF1703CAD3006EF991 /* 闹钟360.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				BA29B5A41D197C45006CD04B /* View */,
 				BB8E4A5B1721F92E009AA32E /* View Controllers */,
 				BB8E4A5A1721F91C009AA32E /* Custom Objects */,
+				92F9D02C1D1A5B050075A7E5 /* Images.xcassets */,
 				BB34F1091703CAD4006EF991 /* Supporting Files */,
 			);
 			path = AlarmClock;
@@ -349,6 +355,8 @@
 				BBFD0ECC171FA6F200F7C664 /* AlarmLabelEditViewController.m */,
 				9202DC721D181FF3004ACA8F /* VideoPlayerController.h */,
 				9202DC731D181FF3004ACA8F /* VideoPlayerController.m */,
+				92F9D02E1D1A66680075A7E5 /* UIWindow+PazLabs.h */,
+				92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -370,7 +378,7 @@
 			);
 			name = AlarmClock;
 			productName = AlarmClock;
-			productReference = BB34F0FF1703CAD3006EF991 /* AlarmClock.app */;
+			productReference = BB34F0FF1703CAD3006EF991 /* 闹钟360.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -383,7 +391,12 @@
 				ORGANIZATIONNAME = "Jon Bauer";
 				TargetAttributes = {
 					BB34F0FE1703CAD3006EF991 = {
-						DevelopmentTeam = Z3VGL34GCF;
+						DevelopmentTeam = CSRZWBWL27;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -418,6 +431,7 @@
 				BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */,
 				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
 				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
+				92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */,
 				BB34F10D1703CAD4006EF991 /* InfoPlist.strings in Resources */,
 				9211BCC11D195A560064F049 /* 4-A.png in Resources */,
 				BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */,
@@ -473,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB34F10F1703CAD4006EF991 /* main.m in Sources */,
+				92F9D0301D1A66680075A7E5 /* UIWindow+PazLabs.m in Sources */,
 				BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */,
 				BB34F1131703CAD4006EF991 /* AppDelegate.m in Sources */,
 				9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */,
@@ -570,6 +585,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -577,7 +594,8 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
+				PRODUCT_NAME = "闹钟360";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;
@@ -588,6 +606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -595,7 +615,8 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
+				PRODUCT_NAME = "闹钟360";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;

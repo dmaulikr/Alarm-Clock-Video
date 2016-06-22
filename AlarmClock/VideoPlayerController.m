@@ -16,6 +16,7 @@
 
 @property(strong,nonatomic)UIButton *closeButton;
 @property(strong,nonatomic)MPMoviePlayerViewController *moviePlayerViewController;
+@property(strong,nonatomic)MPMoviePlayerController *player;
 @property(strong,nonatomic)UIView *overlay;
 
 @property(strong,nonatomic)TPFTimerView *bottomTimerView;
@@ -36,6 +37,18 @@
 
     return self;
 }
+-(void)viewWillAppear:(BOOL)animated{
+
+    _closeButton.alpha = 0;
+    [_player play];
+
+}
+-(void)viewWillDisappear:(BOOL)animated{
+
+    [_player stop];
+
+}
+
 -(void)initView{
     
     NSBundle *myBundle = [NSBundle mainBundle];
@@ -52,13 +65,12 @@
     
     
     // play movie
-    MPMoviePlayerController *player = [self.moviePlayerViewController moviePlayer];
-    player.controlStyle = MPMovieControlStyleNone;
-    player.shouldAutoplay = YES;
-    player.repeatMode = MPMovieRepeatModeOne;
-    [player setFullscreen:YES animated:YES];
-    player.scalingMode = MPMovieScalingModeAspectFit;
-    [player play];
+    _player = [self.moviePlayerViewController moviePlayer];
+    _player.controlStyle = MPMovieControlStyleNone;
+    _player.shouldAutoplay = YES;
+    _player.repeatMode = MPMovieRepeatModeOne;
+    [_player setFullscreen:YES animated:YES];
+    _player.scalingMode = MPMovieScalingModeAspectFit;
 
     
     [self.view addSubview:self.bottomTimerView];
