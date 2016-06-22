@@ -194,8 +194,9 @@
         [localNotification setFireDate:currentAlarm.timeToSetOff];
         [localNotification setTimeZone:[NSTimeZone defaultTimeZone]];
         // Setup alert notification
-        [localNotification setAlertBody:@"Alarm" ];
-        [localNotification setAlertAction:@"Open App"];
+        [localNotification setAlertBody:@"闹钟360" ];
+        [localNotification setAlertAction:@"打开App"];
+        localNotification.soundName = @"Best_Morning_Alarm.m4r";
         [localNotification setHasAction:YES];
         
         

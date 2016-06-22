@@ -239,7 +239,7 @@
     [localNotification setTimeZone:[NSTimeZone defaultTimeZone]];  
     // Setup alert notification
     [localNotification setAlertBody:@"闹钟360" ];
-    [localNotification setAlertAction:@"滑动解锁打开APP"];
+    [localNotification setAlertAction:@"打开APP"];
     [localNotification setHasAction:YES];
     localNotification.soundName = @"Best_Morning_Alarm.m4r";
     

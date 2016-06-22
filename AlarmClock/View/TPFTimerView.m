@@ -72,7 +72,7 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
-    [dateFormatter setDateFormat:@"hh:mm a"];
+    [dateFormatter setDateFormat:@"HH:mm a"];
     NSString *hourMinuteSecond = [dateFormatter stringFromDate:date];
     
     int h1 = [[hourMinuteSecond substringWithRange:NSMakeRange(0, 1)] intValue];

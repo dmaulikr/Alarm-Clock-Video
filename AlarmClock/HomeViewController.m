@@ -8,42 +8,28 @@
 #import "AppDelegate.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "VideoPlayerController.h"
+#import "TPFTimerView.h"
 
 @interface HomeViewController ()
+
+@property(strong,nonatomic)TPFTimerView *timerView;
 
 @end
 
 
 @implementation HomeViewController
-@synthesize hour1Label;
-@synthesize hour2Label;
-@synthesize minute1Label;
-@synthesize minute2Label;
-@synthesize colon1;
 @synthesize alarmGoingOff;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self myTimerAction];
-    NSRunLoop *runloop = [NSRunLoop currentRunLoop];
-    //How often to update the clock labels
-    NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(myTimerAction) userInfo:nil repeats:YES];
-    [runloop addTimer:timer forMode:NSRunLoopCommonModes];
-    [runloop addTimer:timer forMode:UITrackingRunLoopMode];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+ 
+   
+    [self.view addSubview:self.timerView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    //This is what sets the custom font
-    //See -http://stackoverflow.com/questions/360751/can-i-embed-a-custom-font-in-an-iphone-application
-    colon1.font = [UIFont fontWithName:@"digital-7" size:90];
-    hour1Label.font = [UIFont fontWithName:@"digital-7" size:90];
-    minute1Label.font = [UIFont fontWithName:@"digital-7" size:90];
-    hour2Label.font = [UIFont fontWithName:@"digital-7" size:90];
-    minute2Label.font = [UIFont fontWithName:@"digital-7" size:90];
 
 }
 
@@ -59,22 +45,6 @@
                                                    otherButtonTitles:nil, nil];
         [alarmAlert show];
     }
-}
-
-//This updates the clock labels
--(void)myTimerAction
-{
-    NSDate *date = [NSDate date];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    
-    [dateFormatter setDateFormat:@"hh:mm a"];
-    NSString *hourMinuteSecond = [dateFormatter stringFromDate:date];
-
-    hour1Label.text = [hourMinuteSecond substringWithRange:NSMakeRange(0, 1)];
-    hour2Label.text = [hourMinuteSecond substringWithRange:NSMakeRange(1, 1)];
-    minute1Label.text = [hourMinuteSecond substringWithRange:NSMakeRange(3, 1)];
-    minute2Label.text = [hourMinuteSecond substringWithRange:NSMakeRange(4, 1)];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -101,6 +71,22 @@
     videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [self presentViewController:videoPlayerController animated:YES completion:^(){}];
+}
+
+#pragma getter
+
+-(TPFTimerView *)timerView{
+
+    if(!_timerView){
+    
+        int height = 100;
+        int widht = self.view.frame.size.width - 100;
+        
+        _timerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(50, 100, widht, height) imageType:ImageTypeC];
+    
+    }
+
+    return _timerView;
 }
 
 - (BOOL)shouldAutorotate

@@ -160,7 +160,7 @@
     if(!_topTimerView){
         
         
-        _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,0, 100, 44) imageType:ImageTypeA];
+        _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-100)/2,0, 100, 44) imageType:ImageTypeC];
         
         
         CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
@@ -169,6 +169,10 @@
     
     return _topTimerView;
     
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 //- (UIInterfaceOrientationMask)supportedInterfaceOrientations
