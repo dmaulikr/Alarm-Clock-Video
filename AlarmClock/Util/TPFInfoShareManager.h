@@ -7,11 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface TPFInfoShareManager : NSObject
 
 +(instancetype)shareManager;
 
 @property(nonatomic) BOOL fromCloseApp;
+
+@property(nonatomic,strong)CMMotionManager *motionManager;
+
+@property(nonatomic,strong)UIView *maskBlack;
+
+@property(nonatomic)float accelerationY;
+
+@property(nonatomic)BOOL alarmOn;
+
+@property(nonatomic)BOOL isLight;
+
+@property(nonatomic)BOOL afterFiveSeconds;
+
+@property(nonatomic)BOOL isRemove;
 
 @end

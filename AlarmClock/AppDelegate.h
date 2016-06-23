@@ -15,4 +15,6 @@
 
 @property(nonatomic,strong) VideoPlayerController *videoPlayerController;
 
+@property (strong,nonatomic) NSOperationQueue *quene;
+
 @end

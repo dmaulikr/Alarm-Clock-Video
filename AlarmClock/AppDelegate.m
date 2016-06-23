@@ -25,6 +25,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    
+    if(![userDefault valueForKey:@"alarmOn"])
+        [userDefault setValue:@"0" forKey:@"alarmOn"];
+    
+    
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         
         [[UIApplication sharedApplication]  registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
@@ -37,6 +43,9 @@
     [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     
     TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+    shareManager.isLight = true;
+    shareManager.afterFiveSeconds = false;
+    shareManager.isRemove = true;
     
     if (localNotif)
     {
@@ -45,19 +54,150 @@
     }
     else
         shareManager.fromCloseApp = NO;
+    
+    [self initCMMotionManager];
         
     return YES;
+}
+-(void)initCMMotionManager{
+
+    TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+
+    shareManager.maskBlack = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    shareManager.maskBlack.backgroundColor = [UIColor blackColor];
+    
+    _quene = [[NSOperationQueue alloc] init];
+    
+     shareManager.motionManager=[[CMMotionManager alloc]init];
+    //判断加速计是否可用
+    if ([shareManager.motionManager isAccelerometerAvailable]) {
+        // 设置加速计频率
+        [shareManager.motionManager setAccelerometerUpdateInterval:0.5];
+        //开始采样数据
+        [shareManager.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+            
+            NSLog(@"%f---%f",accelerometerData.acceleration.x,accelerometerData.acceleration.y);
+            
+            shareManager.accelerationY = accelerometerData.acceleration.y;
+            
+            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+            int alarmOn = [[userDefault valueForKey:@"alarmOn"] intValue];
+            
+            if(alarmOn ==1)
+                return ;
+            
+            NSDecimalNumber *temp = [[NSDecimalNumber alloc] initWithFloat:accelerometerData.acceleration.y];
+            temp  = [temp decimalNumberByMultiplyingBy:[[NSDecimalNumber alloc] initWithFloat:10000.0f]];
+            
+            int a = fabsf([temp floatValue]);
+            
+            BOOL x = a < 1000;
+            
+         
+            
+            if(x && shareManager.isLight){
+            
+                [self addMaskView];
+            
+            }
+            
+            if(!x && !shareManager.isLight){
+                
+                [self lightMaskView];
+                
+            }
+                
+            
+            
+        }];
+    } else {
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"不支持陀螺仪" preferredStyle:UIAlertControllerStyleAlert];
+        
+        [self.window.visibleViewController presentViewController:alertController animated:YES completion:nil];
+    }
+    
+}
+-(void)addMaskView{
+
+    TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+
+    if(shareManager.afterFiveSeconds)
+        return;
+    
+    shareManager.afterFiveSeconds = true;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        
+        if(shareManager.accelerationY< 0.1){
+        
+            shareManager.maskBlack.alpha = 0;
+            
+            [self.window.visibleViewController.view addSubview:shareManager.maskBlack];
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                
+                shareManager.maskBlack.alpha = 1;
+                
+            } completion:^(BOOL finished) {
+                
+                shareManager.isLight = false;
+                 shareManager.afterFiveSeconds = false;
+                shareManager.isRemove = false;
+                
+            }];
+        
+        }
+        else{
+        
+             shareManager.afterFiveSeconds = false;
+        
+        }
+        
+    });
+
+}
+-(void)lightMaskView{
+
+    TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
+    
+    if(shareManager.isRemove)
+        return;
+    
+    shareManager.isRemove = true;
+    
+    NSLog(@"text");
+    
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        shareManager.maskBlack.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+    
+        shareManager.isRemove = true;
+        [ shareManager.maskBlack removeFromSuperview];
+         shareManager.isLight = true;
+        
+        
+    }];
 }
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
 
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
-//    
-//    NSURL *file = [[NSURL alloc] initFileURLWithPath:path];   
-//    
-//    self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
-//    [self.player prepareToPlay];
-//    [self.player play];
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setValue:@"1" forKey:@"alarmOn"];
+    
+    [self lightMaskView];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
+    
+    NSURL *file = [[NSURL alloc] initFileURLWithPath:path];   
+    
+    self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+    [self.player prepareToPlay];
+    [self.player play];
     
     _videoPlayerController =  [[VideoPlayerController alloc] init];
     _videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;

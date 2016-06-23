@@ -70,6 +70,9 @@
 		BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95731D15AAE6005BF144 /* 9-B.tga */; };
 		BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95741D15AAE6005BF144 /* 9-C.tga */; };
 		BAB005771D199552009EC0B3 /* App_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB005761D199552009EC0B3 /* App_icon.png */; };
+		BAB307C31D1C252B00BB47EA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB307C21D1C252B00BB47EA /* CoreMotion.framework */; };
+		BAB307C71D1C34AC00BB47EA /* 字母LOGO.mov in Resources */ = {isa = PBXBuildFile; fileRef = BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */; };
+		BAB307C91D1C3CF500BB47EA /* 图形LOGO2.mov in Resources */ = {isa = PBXBuildFile; fileRef = BAB307C81D1C3CF500BB47EA /* 图形LOGO2.mov */; };
 		BB2AB1FA171DCD4D0044DACE /* AlarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */; };
 		BB2AB1FD171DEE740044DACE /* AddEditAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */; };
 		BB34F1031703CAD3006EF991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB34F1021703CAD3006EF991 /* UIKit.framework */; };
@@ -158,6 +161,9 @@
 		BA7F95731D15AAE6005BF144 /* 9-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-B.tga"; sourceTree = "<group>"; };
 		BA7F95741D15AAE6005BF144 /* 9-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-C.tga"; sourceTree = "<group>"; };
 		BAB005761D199552009EC0B3 /* App_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_icon.png; sourceTree = "<group>"; };
+		BAB307C21D1C252B00BB47EA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "字母LOGO.mov"; sourceTree = "<group>"; };
+		BAB307C81D1C3CF500BB47EA /* 图形LOGO2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "图形LOGO2.mov"; sourceTree = "<group>"; };
 		BB2AB1F8171DCD4D0044DACE /* AlarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmObject.h; sourceTree = "<group>"; };
 		BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
 		BB2AB1FB171DEE740044DACE /* AddEditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditAlarmViewController.h; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB307C31D1C252B00BB47EA /* CoreMotion.framework in Frameworks */,
 				9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */,
 				BBFD0ECA171FA4CF00F7C664 /* AVFoundation.framework in Frameworks */,
 				BB34F1031703CAD3006EF991 /* UIKit.framework in Frameworks */,
@@ -206,6 +213,8 @@
 		9202DC6C1D181D5D004ACA8F /* video */ = {
 			isa = PBXGroup;
 			children = (
+				BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */,
+				BAB307C81D1C3CF500BB47EA /* 图形LOGO2.mov */,
 				9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */,
 			);
 			path = video;
@@ -319,6 +328,7 @@
 		BB34F1011703CAD3006EF991 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAB307C21D1C252B00BB47EA /* CoreMotion.framework */,
 				9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */,
 				BBFD0EC9171FA4CF00F7C664 /* AVFoundation.framework */,
 				BB34F1021703CAD3006EF991 /* UIKit.framework */,
@@ -485,6 +495,7 @@
 				BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */,
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
 				92F9D03E1D1A79910075A7E5 /* 2-C.png in Resources */,
+				BAB307C91D1C3CF500BB47EA /* 图形LOGO2.mov in Resources */,
 				9211BCC61D195A560064F049 /* 9-A.png in Resources */,
 				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
 				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
@@ -534,6 +545,7 @@
 				9211BCC21D195A560064F049 /* 5-A.png in Resources */,
 				BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */,
 				BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */,
+				BAB307C71D1C34AC00BB47EA /* 字母LOGO.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

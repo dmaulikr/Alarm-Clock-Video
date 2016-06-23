@@ -81,7 +81,7 @@
     int m1 = [[hourMinuteSecond substringWithRange:NSMakeRange(3, 1)] intValue];
     int m2 = [[hourMinuteSecond substringWithRange:NSMakeRange(4, 1)] intValue];
     
-    if(self.timerPosition == TimerPositionBottom || self.timerPosition == TimerPositionTop || self.timerPosition == [TimerPositionRight || self.timerPosition == TimerPositionLeft]){
+    if(self.timerPosition == TimerPositionBottom || self.timerPosition == TimerPositionTop || self.timerPosition == TimerPositionRight || self.timerPosition == TimerPositionLeft){
         
         
         
