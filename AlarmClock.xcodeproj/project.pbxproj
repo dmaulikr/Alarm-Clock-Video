@@ -35,6 +35,8 @@
 		92F9D0451D1A79910075A7E5 /* 9-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F9D03A1D1A79910075A7E5 /* 9-C.png */; };
 		92F9D0461D1A79910075A7E5 /* 10-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F9D03B1D1A79910075A7E5 /* 10-C.png */; };
 		92F9D04A1D1A842B0075A7E5 /* TPFInfoShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D0491D1A842B0075A7E5 /* TPFInfoShareManager.m */; };
+		BA103CC31D1D7329009AD29B /* 图形LOGO_UP.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */; };
+		BA103CC41D1D7329009AD29B /* 字母LOGO_UP.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
@@ -125,6 +127,8 @@
 		92F9D03B1D1A79910075A7E5 /* 10-C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-C.png"; sourceTree = "<group>"; };
 		92F9D0481D1A842B0075A7E5 /* TPFInfoShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFInfoShareManager.h; sourceTree = "<group>"; };
 		92F9D0491D1A842B0075A7E5 /* TPFInfoShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFInfoShareManager.m; sourceTree = "<group>"; };
+		BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "图形LOGO_UP.mov"; sourceTree = "<group>"; };
+		BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "字母LOGO_UP.mov"; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 		9202DC6C1D181D5D004ACA8F /* video */ = {
 			isa = PBXGroup;
 			children = (
+				BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */,
+				BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */,
 				BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */,
 				BAB307C81D1C3CF500BB47EA /* 图形LOGO2.mov */,
 				9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */,
@@ -487,6 +493,7 @@
 				BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */,
 				BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */,
 				BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */,
+				BA103CC41D1D7329009AD29B /* 字母LOGO_UP.mov in Resources */,
 				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
 				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
 				92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */,
@@ -516,6 +523,7 @@
 				BB34F1171703CAD4006EF991 /* Default@2x.png in Resources */,
 				BA7F957B1D15AAE6005BF144 /* 10-A.tga in Resources */,
 				92F9D0451D1A79910075A7E5 /* 9-C.png in Resources */,
+				BA103CC31D1D7329009AD29B /* 图形LOGO_UP.mov in Resources */,
 				BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */,
 				92F9D0461D1A79910075A7E5 /* 10-C.png in Resources */,
 				BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */,

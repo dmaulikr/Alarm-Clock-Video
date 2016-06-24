@@ -29,4 +29,6 @@
 
 @property(nonatomic)BOOL isRemove;
 
+@property(nonatomic)CGFloat currentLight;
+
 @end

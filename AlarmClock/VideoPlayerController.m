@@ -10,6 +10,7 @@
 #import "TPFTimerView.h"
 #import "TPFInfoShareManager.h"
 #import "HomeViewController.h"
+#import "AppDelegate.h"
 
 //#define  timerViewHeight 44;
 //#define  timerViewWidth 100;
@@ -70,8 +71,11 @@
 //    NSBundle *myBundle = [NSBundle mainBundle];
 //    NSString* path = [myBundle pathForResource:@"字母LOGO" ofType:@"mov"];
     
+    AppDelegate * myAppDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [myAppDelegate.player play];
+    
     NSBundle *myBundle = [NSBundle mainBundle];
-    NSString* path = [myBundle pathForResource:@"图形LOGO2" ofType:@"mov"];
+    NSString* path = [myBundle pathForResource:@"图形LOGO_UP" ofType:@"mov"];
     
     self.moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
     
@@ -144,8 +148,11 @@
     
     shareManager.fromCloseApp = false;
     
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    [userDefault setValue:@"0" forKey:@"alarmOn"];
+    AppDelegate * myAppDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [myAppDelegate.player stop];
+    
+//    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+//    [userDefault setValue:@"0" forKey:@"alarmOn"];
 }
 -(void)goToHome{
 
@@ -178,6 +185,8 @@
         
     _bottomTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-_timerViewWidth)/2,y, 100, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionBottom];
     
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
+        [_bottomTimerView setTransform:transform];
     
     }
 
@@ -194,8 +203,8 @@
         _topTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-_timerViewWidth)/2,sub, _timerViewWidth,_timerViewHeight) imageType:ImageTypeC timerPosition:TimerPositionTop];
         
         
-        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
-        [_topTimerView setTransform:transform];
+//        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
+//        [_topTimerView setTransform:transform];
     }
     
     return _topTimerView;
@@ -208,8 +217,12 @@
         
         _rightTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,_timerViewWidth, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionRight];
         
-        CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI/2);
+//        CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI/2);
+//        [self.rightTimerView setTransform:transform];
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
         [self.rightTimerView setTransform:transform];
+
         
         _rightTimerView.center = CGPointMake(self.view.frame.size.width - _timerViewHeight/2,self.view.frame.size.height/2);
     }
@@ -225,7 +238,10 @@
         
         _leftTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,_timerViewWidth,_timerViewHeight) imageType:ImageTypeC timerPosition:TimerPositionLeft];
         
-        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+//        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+//        [_leftTimerView setTransform:transform];
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI/2);
         [_leftTimerView setTransform:transform];
         
         _leftTimerView.center = CGPointMake(_timerViewHeight/2,self.view.frame.size.height/2);

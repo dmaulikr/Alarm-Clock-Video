@@ -25,10 +25,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    
-    if(![userDefault valueForKey:@"alarmOn"])
-        [userDefault setValue:@"0" forKey:@"alarmOn"];
+//    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+//    
+//    if(![userDefault valueForKey:@"alarmOn"])
+//        [userDefault setValue:@"0" forKey:@"alarmOn"];
     
     
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
@@ -65,6 +65,7 @@
 
     shareManager.maskBlack = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     shareManager.maskBlack.backgroundColor = [UIColor blackColor];
+    [shareManager.maskBlack addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandler:)]];
     
     _quene = [[NSOperationQueue alloc] init];
     
@@ -80,11 +81,20 @@
             
             shareManager.accelerationY = accelerometerData.acceleration.y;
             
-            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-            int alarmOn = [[userDefault valueForKey:@"alarmOn"] intValue];
+//            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+//            int alarmOn = [[userDefault valueForKey:@"alarmOn"] intValue];
+//            
+//            NSLog(@"alarmOn:%d",alarmOn);
             
-            if(alarmOn ==1)
+            if([self.window.visibleViewController isKindOfClass:[VideoPlayerController class]]){
+            
+                [self lightMaskView];
                 return ;
+            
+            }
+            
+//            if(alarmOn ==1)
+//                return ;
             
             NSDecimalNumber *temp = [[NSDecimalNumber alloc] initWithFloat:accelerometerData.acceleration.y];
             temp  = [temp decimalNumberByMultiplyingBy:[[NSDecimalNumber alloc] initWithFloat:10000.0f]];
@@ -145,6 +155,8 @@
                 shareManager.isLight = false;
                  shareManager.afterFiveSeconds = false;
                 shareManager.isRemove = false;
+                shareManager.currentLight = [[UIScreen mainScreen] brightness];
+                [[UIScreen mainScreen] setBrightness: 0.0];
                 
             }];
         
@@ -167,8 +179,7 @@
     
     shareManager.isRemove = true;
     
-    NSLog(@"text");
-    
+    [[UIScreen mainScreen] setBrightness: 0.7];
     
     [UIView animateWithDuration:0.5 animations:^{
         
@@ -183,19 +194,36 @@
         
     }];
 }
+-(void)tapHandler:(UITapGestureRecognizer *)recognizer{
+
+    [self lightMaskView];
+
+}
+
+-(AVAudioPlayer *)player{
+
+    if(!player){
+    
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
+        
+        NSURL *file = [[NSURL alloc] initFileURLWithPath:path];
+        
+        self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+        self.player.numberOfLoops = MAXFLOAT;
+
+    }
+
+    return player;
+}
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
 
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    [userDefault setValue:@"1" forKey:@"alarmOn"];
+//    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+//    [userDefault setValue:@"1" forKey:@"alarmOn"];
     
     [self lightMaskView];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
-    
-    NSURL *file = [[NSURL alloc] initFileURLWithPath:path];   
-    
-    self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+   
     [self.player prepareToPlay];
     [self.player play];
     
@@ -245,6 +273,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+     [self lightMaskView];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
