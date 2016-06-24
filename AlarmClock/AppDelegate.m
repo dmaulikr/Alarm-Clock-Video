@@ -59,6 +59,9 @@
         
     return YES;
 }
+
+#pragma mark init method
+
 -(void)initCMMotionManager{
 
     TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
@@ -128,6 +131,9 @@
     }
     
 }
+
+#pragma mark private method
+
 -(void)addMaskView{
 
     TPFInfoShareManager *shareManager = [TPFInfoShareManager shareManager];
@@ -200,6 +206,8 @@
 
 }
 
+#pragma mark getter
+
 -(AVAudioPlayer *)player{
 
     if(!player){
@@ -215,6 +223,8 @@
 
     return player;
 }
+
+#pragma mark  didReceiveLocalNotification
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
 
@@ -252,6 +262,8 @@
     }
     
 }
+
+#pragma mark AppDelegate
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
