@@ -259,7 +259,7 @@
         _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
         [_closeButton setTitle:@"退出" forState:UIControlStateNormal];
         [_closeButton addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_closeButton setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.5]];
+        [_closeButton setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.1]];
     }
     
     return _closeButton;

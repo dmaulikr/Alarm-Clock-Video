@@ -67,7 +67,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Ocenary_Logo_03.png" id="AMm-pd-rkK">
-                                <rect key="frame" x="84" y="43" width="152" height="114"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
