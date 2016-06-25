@@ -42,6 +42,7 @@
 		BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */; };
 		BA103CCC1D1E58E1009AD29B /* Ocenary_Logo_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */; };
 		BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */; };
+		BA103CDA1D1E8B8A009AD29B /* homeBG5.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CD91D1E8B8A009AD29B /* homeBG5.png */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
@@ -139,6 +140,7 @@
 		BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_02.png; sourceTree = "<group>"; };
 		BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_03.png; sourceTree = "<group>"; };
 		BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_32px_1199961_easyicon.net.png; sourceTree = "<group>"; };
+		BA103CD91D1E8B8A009AD29B /* homeBG5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBG5.png; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA103CD91D1E8B8A009AD29B /* homeBG5.png */,
 				BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */,
 				BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */,
 				BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */,
@@ -550,6 +553,7 @@
 				BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */,
 				9211BCBE1D195A560064F049 /* 10-A.png in Resources */,
 				BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */,
+				BA103CDA1D1E8B8A009AD29B /* homeBG5.png in Resources */,
 				BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */,
 				BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */,
 				BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */,
