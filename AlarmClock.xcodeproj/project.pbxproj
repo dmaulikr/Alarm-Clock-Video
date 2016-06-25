@@ -37,6 +37,11 @@
 		92F9D04A1D1A842B0075A7E5 /* TPFInfoShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D0491D1A842B0075A7E5 /* TPFInfoShareManager.m */; };
 		BA103CC31D1D7329009AD29B /* 图形LOGO_UP.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */; };
 		BA103CC41D1D7329009AD29B /* 字母LOGO_UP.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */; };
+		BA103CC61D1E56DF009AD29B /* launchHD5_5.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC51D1E56DF009AD29B /* launchHD5_5.png */; };
+		BA103CCA1D1E58E1009AD29B /* Ocenary_Logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */; };
+		BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */; };
+		BA103CCC1D1E58E1009AD29B /* Ocenary_Logo_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */; };
+		BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
 		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
 		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
@@ -129,6 +134,11 @@
 		92F9D0491D1A842B0075A7E5 /* TPFInfoShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFInfoShareManager.m; sourceTree = "<group>"; };
 		BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "图形LOGO_UP.mov"; sourceTree = "<group>"; };
 		BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "字母LOGO_UP.mov"; sourceTree = "<group>"; };
+		BA103CC51D1E56DF009AD29B /* launchHD5_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchHD5_5.png; sourceTree = "<group>"; };
+		BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_01.png; sourceTree = "<group>"; };
+		BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_02.png; sourceTree = "<group>"; };
+		BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_03.png; sourceTree = "<group>"; };
+		BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_32px_1199961_easyicon.net.png; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
 		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
@@ -363,6 +373,11 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */,
+				BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */,
+				BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */,
+				BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */,
+				BA103CC51D1E56DF009AD29B /* launchHD5_5.png */,
 				BAB005761D199552009EC0B3 /* App_icon.png */,
 				9211BCB01D195A560064F049 /* Alarm_Digital */,
 				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
@@ -496,6 +511,7 @@
 				BA103CC41D1D7329009AD29B /* 字母LOGO_UP.mov in Resources */,
 				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
 				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
+				BA103CCC1D1E58E1009AD29B /* Ocenary_Logo_03.png in Resources */,
 				92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */,
 				BB34F10D1703CAD4006EF991 /* InfoPlist.strings in Resources */,
 				9211BCC11D195A560064F049 /* 4-A.png in Resources */,
@@ -503,6 +519,7 @@
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
 				92F9D03E1D1A79910075A7E5 /* 2-C.png in Resources */,
 				BAB307C91D1C3CF500BB47EA /* 图形LOGO2.mov in Resources */,
+				BA103CCA1D1E58E1009AD29B /* Ocenary_Logo_01.png in Resources */,
 				9211BCC61D195A560064F049 /* 9-A.png in Resources */,
 				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
 				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
@@ -548,7 +565,10 @@
 				BB34F11C1703CAD4006EF991 /* MainStoryboard.storyboard in Resources */,
 				BB34F1261703CB2B006EF991 /* digital-7.ttf in Resources */,
 				BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */,
+				BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */,
+				BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */,
 				BBFD0EC8171FA49D00F7C664 /* Best_Morning_Alarm.m4r in Resources */,
+				BA103CC61D1E56DF009AD29B /* launchHD5_5.png in Resources */,
 				BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */,
 				9211BCC21D195A560064F049 /* 5-A.png in Resources */,
 				BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */,
@@ -665,7 +685,7 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -686,7 +706,7 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "$(USER)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
