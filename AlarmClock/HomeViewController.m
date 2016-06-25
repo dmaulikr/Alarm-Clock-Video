@@ -79,10 +79,10 @@
 
     if(!_timerView){
     
-        int height = 100;
-        int widht = self.view.frame.size.width - 100;
+        int height = 65;
+        int widht = self.view.frame.size.width - 200;
         
-        _timerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(50,CGRectGetMaxY(self.logoImageView.frame)+20, widht, height) imageType:ImageTypeC timerPosition:TimerPositionNormal];
+        _timerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(100,CGRectGetMaxY(self.logoImageView.frame)+20, widht, height) imageType:ImageTypeC timerPosition:TimerPositionNormal];
     
     }
 
