@@ -82,12 +82,8 @@
             
             NSLog(@"%f---%f",accelerometerData.acceleration.x,accelerometerData.acceleration.y);
             
+            shareManager.accelerationX = accelerometerData.acceleration.x;
             shareManager.accelerationY = accelerometerData.acceleration.y;
-            
-//            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-//            int alarmOn = [[userDefault valueForKey:@"alarmOn"] intValue];
-//            
-//            NSLog(@"alarmOn:%d",alarmOn);
             
             if([self.window.visibleViewController isKindOfClass:[VideoPlayerController class]]){
             
@@ -95,26 +91,19 @@
                 return ;
             
             }
+    
             
-//            if(alarmOn ==1)
-//                return ;
-            
-            NSDecimalNumber *temp = [[NSDecimalNumber alloc] initWithFloat:accelerometerData.acceleration.y];
-            temp  = [temp decimalNumberByMultiplyingBy:[[NSDecimalNumber alloc] initWithFloat:10000.0f]];
-            
-            int a = fabsf([temp floatValue]);
-            
-            BOOL x = a < 1000;
-            
+            BOOL x = fabs(accelerometerData.acceleration.x) < 0.05;
+            BOOL y = fabs(accelerometerData.acceleration.y) < 0.05;
          
             
-            if(x && shareManager.isLight){
+            if(x && y && shareManager.isLight){
             
                 [self addMaskView];
-            
+                return;
             }
             
-            if(!x && !shareManager.isLight){
+            if((!x || !y) && !shareManager.isLight){
                 
                 [self lightMaskView];
                 
@@ -146,7 +135,13 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         
-        if(shareManager.accelerationY< 0.1){
+        if([self.window.visibleViewController isKindOfClass:[VideoPlayerController class]])
+            return ;
+            
+        BOOL x = fabs(shareManager.accelerationX) < 0.05;
+        BOOL y = fabs(shareManager.accelerationY) < 0.05;
+        
+        if(x && y){
         
             shareManager.maskBlack.alpha = 0;
             

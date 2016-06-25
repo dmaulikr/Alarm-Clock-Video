@@ -19,6 +19,8 @@
 
 @property(nonatomic,strong)UIView *maskBlack;
 
+@property(nonatomic)float accelerationX;
+
 @property(nonatomic)float accelerationY;
 
 @property(nonatomic)BOOL alarmOn;
