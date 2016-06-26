@@ -28,12 +28,22 @@
 @property(strong,nonatomic)TPFTimerView *rightTimerView;
 @property(strong,nonatomic)TPFTimerView *leftTimerView;
 
+@property(strong,nonatomic)TPFTimerView *normalRightTimerView;
+
 @property(nonatomic)float timerViewHeight;
 @property(nonatomic)float timerViewWidth;
 
 @end
 
 @implementation VideoPlayerController
+
+-(id)initWithMode:(VideoSelectMode)videoSelectMode{
+
+    _videoSelectMode = videoSelectMode;
+    
+    return [self init];
+
+}
 
 -(id)init{
 
@@ -75,16 +85,43 @@
     [myAppDelegate.player play];
     
     NSBundle *myBundle = [NSBundle mainBundle];
-    NSString* path = [myBundle pathForResource:@"图形LOGO_UP" ofType:@"mov"];
+    NSString* path;
+    
+    if(_videoSelectMode == VideoSelectModeOne){
+    
+        path = [myBundle pathForResource:@"图形LOGO_UP" ofType:@"mov"];
+        
+        [self.view addSubview:self.bottomTimerView];
+        [self.view addSubview:self.topTimerView];
+        [self.view addSubview:self.rightTimerView];
+        [self.view addSubview:self.leftTimerView];
+    }
+        
+    else{
+    
+        path = [myBundle pathForResource:@"图形LOGO正面-MOV_01" ofType:@"mov"];
+        [self.view addSubview:self.normalRightTimerView];
+    }
     
     self.moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
     
-    self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width);
-    self.moviePlayerViewController.view.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+    if(_videoSelectMode == VideoSelectModeOne){
+        
+        self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width);
+        self.moviePlayerViewController.view.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+        
+    }
+    
+    else{
+        
+        self.moviePlayerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width-20, self.view.bounds.size.width-20);
+        self.moviePlayerViewController.view.center = CGPointMake(self.view.bounds.size.width/2-25, self.view.bounds.size.height/2);
+    }
+    
     CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
     [self.moviePlayerViewController.view setTransform:transform];
     
-    [self.view addSubview:self.moviePlayerViewController.view];
+    [self.view insertSubview:self.moviePlayerViewController.view belowSubview:_bottomTimerView?_bottomTimerView:_normalRightTimerView];
     
     
     // play movie
@@ -95,11 +132,6 @@
     [_player setFullscreen:YES animated:YES];
     _player.scalingMode = MPMovieScalingModeAspectFit;
 
-    
-    [self.view addSubview:self.bottomTimerView];
-    [self.view addSubview:self.topTimerView];
-    [self.view addSubview:self.rightTimerView];
-    [self.view addSubview:self.leftTimerView];
     
    
     [self.view addSubview:self.overlay];
@@ -251,6 +283,27 @@
     return _leftTimerView;
     
 }
+-(TPFTimerView *)normalRightTimerView{
+
+    if(!_normalRightTimerView){
+        
+        
+        _normalRightTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,_timerViewWidth, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionNormal];
+        
+        //        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+        //        [_leftTimerView setTransform:transform];
+        
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+        [_normalRightTimerView setTransform:transform];
+        
+         _normalRightTimerView.center = CGPointMake(self.view.frame.size.width - _timerViewHeight/2,self.view.frame.size.height/2);
+        
+    }
+    
+    return _normalRightTimerView;
+
+
+}
 
 -(UIButton *)closeButton{
     
@@ -293,4 +346,20 @@
 //{
 //    return toInterfaceOrientation != UIDeviceOrientationPortraitUpsideDown;
 //}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation == UIDeviceOrientationPortrait;
+}
+
 @end

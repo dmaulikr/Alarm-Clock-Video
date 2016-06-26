@@ -44,39 +44,10 @@
 		BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */; };
 		BA103CDC1D1EAFC2009AD29B /* homeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CDB1D1EAFC2009AD29B /* homeBG.png */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
-		BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95541D15AAE6005BF144 /* 0-A.tga */; };
-		BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95551D15AAE6005BF144 /* 0-B.tga */; };
-		BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95561D15AAE6005BF144 /* 0-C.tga */; };
-		BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95571D15AAE6005BF144 /* 1-A.tga */; };
-		BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95581D15AAE6005BF144 /* 1-B.tga */; };
-		BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95591D15AAE6005BF144 /* 1-C.tga */; };
-		BA7F957B1D15AAE6005BF144 /* 10-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955A1D15AAE6005BF144 /* 10-A.tga */; };
-		BA7F957C1D15AAE6005BF144 /* 10-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955B1D15AAE6005BF144 /* 10-B.tga */; };
-		BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955C1D15AAE6005BF144 /* 10-C.tga */; };
-		BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955D1D15AAE6005BF144 /* 2-A.tga */; };
-		BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955E1D15AAE6005BF144 /* 2-B.tga */; };
-		BA7F95801D15AAE6005BF144 /* 2-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F955F1D15AAE6005BF144 /* 2-C.tga */; };
-		BA7F95811D15AAE6005BF144 /* 3-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95601D15AAE6005BF144 /* 3-A.tga */; };
-		BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95611D15AAE6005BF144 /* 3-B.tga */; };
-		BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95621D15AAE6005BF144 /* 3-C.tga */; };
-		BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95631D15AAE6005BF144 /* 4-A.tga */; };
-		BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95641D15AAE6005BF144 /* 4-B.tga */; };
-		BA7F95861D15AAE6005BF144 /* 4-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95651D15AAE6005BF144 /* 4-C.tga */; };
-		BA7F95871D15AAE6005BF144 /* 5-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95661D15AAE6005BF144 /* 5-A.tga */; };
-		BA7F95881D15AAE6005BF144 /* 5-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95671D15AAE6005BF144 /* 5-B.tga */; };
-		BA7F95891D15AAE6005BF144 /* 5-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95681D15AAE6005BF144 /* 5-C.tga */; };
-		BA7F958A1D15AAE6005BF144 /* 6-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95691D15AAE6005BF144 /* 6-A.tga */; };
-		BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956A1D15AAE6005BF144 /* 6-B.tga */; };
-		BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956B1D15AAE6005BF144 /* 6-C.tga */; };
-		BA7F958D1D15AAE6005BF144 /* 7-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956C1D15AAE6005BF144 /* 7-A.tga */; };
-		BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956D1D15AAE6005BF144 /* 7-B.tga */; };
-		BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956E1D15AAE6005BF144 /* 7-C.tga */; };
-		BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F956F1D15AAE6005BF144 /* 8-A.tga */; };
-		BA7F95911D15AAE6005BF144 /* 8-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95701D15AAE6005BF144 /* 8-B.tga */; };
-		BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95711D15AAE6005BF144 /* 8-C.tga */; };
-		BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95721D15AAE6005BF144 /* 9-A.tga */; };
-		BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95731D15AAE6005BF144 /* 9-B.tga */; };
-		BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */ = {isa = PBXBuildFile; fileRef = BA7F95741D15AAE6005BF144 /* 9-C.tga */; };
+		BA6274B71D201B2300C7408A /* selectVideoMode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6274B61D201B2300C7408A /* selectVideoMode.m */; };
+		BA6274BA1D2020F900C7408A /* 预约结算3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274B81D2020F900C7408A /* 预约结算3.png */; };
+		BA6274BB1D2020F900C7408A /* 预约结算4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274B91D2020F900C7408A /* 预约结算4.png */; };
+		BA6274BD1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */; };
 		BAB005771D199552009EC0B3 /* App_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB005761D199552009EC0B3 /* App_icon.png */; };
 		BAB307C31D1C252B00BB47EA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB307C21D1C252B00BB47EA /* CoreMotion.framework */; };
 		BAB307C71D1C34AC00BB47EA /* 字母LOGO.mov in Resources */ = {isa = PBXBuildFile; fileRef = BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */; };
@@ -143,39 +114,11 @@
 		BA103CDB1D1EAFC2009AD29B /* homeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBG.png; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
-		BA7F95541D15AAE6005BF144 /* 0-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-A.tga"; sourceTree = "<group>"; };
-		BA7F95551D15AAE6005BF144 /* 0-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-B.tga"; sourceTree = "<group>"; };
-		BA7F95561D15AAE6005BF144 /* 0-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0-C.tga"; sourceTree = "<group>"; };
-		BA7F95571D15AAE6005BF144 /* 1-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-A.tga"; sourceTree = "<group>"; };
-		BA7F95581D15AAE6005BF144 /* 1-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-B.tga"; sourceTree = "<group>"; };
-		BA7F95591D15AAE6005BF144 /* 1-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1-C.tga"; sourceTree = "<group>"; };
-		BA7F955A1D15AAE6005BF144 /* 10-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-A.tga"; sourceTree = "<group>"; };
-		BA7F955B1D15AAE6005BF144 /* 10-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-B.tga"; sourceTree = "<group>"; };
-		BA7F955C1D15AAE6005BF144 /* 10-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-C.tga"; sourceTree = "<group>"; };
-		BA7F955D1D15AAE6005BF144 /* 2-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-A.tga"; sourceTree = "<group>"; };
-		BA7F955E1D15AAE6005BF144 /* 2-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-B.tga"; sourceTree = "<group>"; };
-		BA7F955F1D15AAE6005BF144 /* 2-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2-C.tga"; sourceTree = "<group>"; };
-		BA7F95601D15AAE6005BF144 /* 3-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-A.tga"; sourceTree = "<group>"; };
-		BA7F95611D15AAE6005BF144 /* 3-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-B.tga"; sourceTree = "<group>"; };
-		BA7F95621D15AAE6005BF144 /* 3-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3-C.tga"; sourceTree = "<group>"; };
-		BA7F95631D15AAE6005BF144 /* 4-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-A.tga"; sourceTree = "<group>"; };
-		BA7F95641D15AAE6005BF144 /* 4-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-B.tga"; sourceTree = "<group>"; };
-		BA7F95651D15AAE6005BF144 /* 4-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4-C.tga"; sourceTree = "<group>"; };
-		BA7F95661D15AAE6005BF144 /* 5-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-A.tga"; sourceTree = "<group>"; };
-		BA7F95671D15AAE6005BF144 /* 5-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-B.tga"; sourceTree = "<group>"; };
-		BA7F95681D15AAE6005BF144 /* 5-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5-C.tga"; sourceTree = "<group>"; };
-		BA7F95691D15AAE6005BF144 /* 6-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-A.tga"; sourceTree = "<group>"; };
-		BA7F956A1D15AAE6005BF144 /* 6-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-B.tga"; sourceTree = "<group>"; };
-		BA7F956B1D15AAE6005BF144 /* 6-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6-C.tga"; sourceTree = "<group>"; };
-		BA7F956C1D15AAE6005BF144 /* 7-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-A.tga"; sourceTree = "<group>"; };
-		BA7F956D1D15AAE6005BF144 /* 7-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-B.tga"; sourceTree = "<group>"; };
-		BA7F956E1D15AAE6005BF144 /* 7-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7-C.tga"; sourceTree = "<group>"; };
-		BA7F956F1D15AAE6005BF144 /* 8-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-A.tga"; sourceTree = "<group>"; };
-		BA7F95701D15AAE6005BF144 /* 8-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-B.tga"; sourceTree = "<group>"; };
-		BA7F95711D15AAE6005BF144 /* 8-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-C.tga"; sourceTree = "<group>"; };
-		BA7F95721D15AAE6005BF144 /* 9-A.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-A.tga"; sourceTree = "<group>"; };
-		BA7F95731D15AAE6005BF144 /* 9-B.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-B.tga"; sourceTree = "<group>"; };
-		BA7F95741D15AAE6005BF144 /* 9-C.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-C.tga"; sourceTree = "<group>"; };
+		BA6274B51D201B2300C7408A /* selectVideoMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectVideoMode.h; sourceTree = "<group>"; };
+		BA6274B61D201B2300C7408A /* selectVideoMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectVideoMode.m; sourceTree = "<group>"; };
+		BA6274B81D2020F900C7408A /* 预约结算3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预约结算3.png"; sourceTree = "<group>"; };
+		BA6274B91D2020F900C7408A /* 预约结算4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预约结算4.png"; sourceTree = "<group>"; };
+		BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "图形LOGO正面-MOV_01.mov"; sourceTree = "<group>"; };
 		BAB005761D199552009EC0B3 /* App_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_icon.png; sourceTree = "<group>"; };
 		BAB307C21D1C252B00BB47EA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "字母LOGO.mov"; sourceTree = "<group>"; };
@@ -184,7 +127,7 @@
 		BB2AB1F9171DCD4D0044DACE /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
 		BB2AB1FB171DEE740044DACE /* AddEditAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditAlarmViewController.h; sourceTree = "<group>"; };
 		BB2AB1FC171DEE740044DACE /* AddEditAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditAlarmViewController.m; sourceTree = "<group>"; };
-		BB34F0FF1703CAD3006EF991 /* 闹钟360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "闹钟360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB34F0FF1703CAD3006EF991 /* 影像闹钟.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "影像闹钟.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34F1021703CAD3006EF991 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB34F1041703CAD3006EF991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB34F1061703CAD3006EF991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -229,6 +172,7 @@
 		9202DC6C1D181D5D004ACA8F /* video */ = {
 			isa = PBXGroup;
 			children = (
+				BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */,
 				BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */,
 				BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */,
 				BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */,
@@ -286,46 +230,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */ = {
-			isa = PBXGroup;
-			children = (
-				BA7F95541D15AAE6005BF144 /* 0-A.tga */,
-				BA7F95551D15AAE6005BF144 /* 0-B.tga */,
-				BA7F95561D15AAE6005BF144 /* 0-C.tga */,
-				BA7F95571D15AAE6005BF144 /* 1-A.tga */,
-				BA7F95581D15AAE6005BF144 /* 1-B.tga */,
-				BA7F95591D15AAE6005BF144 /* 1-C.tga */,
-				BA7F955A1D15AAE6005BF144 /* 10-A.tga */,
-				BA7F955B1D15AAE6005BF144 /* 10-B.tga */,
-				BA7F955C1D15AAE6005BF144 /* 10-C.tga */,
-				BA7F955D1D15AAE6005BF144 /* 2-A.tga */,
-				BA7F955E1D15AAE6005BF144 /* 2-B.tga */,
-				BA7F955F1D15AAE6005BF144 /* 2-C.tga */,
-				BA7F95601D15AAE6005BF144 /* 3-A.tga */,
-				BA7F95611D15AAE6005BF144 /* 3-B.tga */,
-				BA7F95621D15AAE6005BF144 /* 3-C.tga */,
-				BA7F95631D15AAE6005BF144 /* 4-A.tga */,
-				BA7F95641D15AAE6005BF144 /* 4-B.tga */,
-				BA7F95651D15AAE6005BF144 /* 4-C.tga */,
-				BA7F95661D15AAE6005BF144 /* 5-A.tga */,
-				BA7F95671D15AAE6005BF144 /* 5-B.tga */,
-				BA7F95681D15AAE6005BF144 /* 5-C.tga */,
-				BA7F95691D15AAE6005BF144 /* 6-A.tga */,
-				BA7F956A1D15AAE6005BF144 /* 6-B.tga */,
-				BA7F956B1D15AAE6005BF144 /* 6-C.tga */,
-				BA7F956C1D15AAE6005BF144 /* 7-A.tga */,
-				BA7F956D1D15AAE6005BF144 /* 7-B.tga */,
-				BA7F956E1D15AAE6005BF144 /* 7-C.tga */,
-				BA7F956F1D15AAE6005BF144 /* 8-A.tga */,
-				BA7F95701D15AAE6005BF144 /* 8-B.tga */,
-				BA7F95711D15AAE6005BF144 /* 8-C.tga */,
-				BA7F95721D15AAE6005BF144 /* 9-A.tga */,
-				BA7F95731D15AAE6005BF144 /* 9-B.tga */,
-				BA7F95741D15AAE6005BF144 /* 9-C.tga */,
-			);
-			path = "手机闹钟数字";
-			sourceTree = "<group>";
-		};
 		BB34F0F61703CAD3006EF991 = {
 			isa = PBXGroup;
 			children = (
@@ -338,7 +242,7 @@
 		BB34F1001703CAD3006EF991 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB34F0FF1703CAD3006EF991 /* 闹钟360.app */,
+				BB34F0FF1703CAD3006EF991 /* 影像闹钟.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,6 +279,8 @@
 		BB34F1091703CAD4006EF991 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA6274B81D2020F900C7408A /* 预约结算3.png */,
+				BA6274B91D2020F900C7408A /* 预约结算4.png */,
 				BA103CDB1D1EAFC2009AD29B /* homeBG.png */,
 				BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */,
 				BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */,
@@ -383,7 +289,6 @@
 				BA103CC51D1E56DF009AD29B /* launchHD5_5.png */,
 				BAB005761D199552009EC0B3 /* App_icon.png */,
 				9211BCB01D195A560064F049 /* Alarm_Digital */,
-				BA7F95531D15AAE6005BF144 /* 手机闹钟数字 */,
 				BB8E4A591721F8E6009AA32E /* Custom Fonts */,
 				BB8E4A581721F8DB009AA32E /* Sounds */,
 				9202DC6C1D181D5D004ACA8F /* video */,
@@ -438,6 +343,8 @@
 				9202DC731D181FF3004ACA8F /* VideoPlayerController.m */,
 				92F9D02E1D1A66680075A7E5 /* UIWindow+PazLabs.h */,
 				92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */,
+				BA6274B51D201B2300C7408A /* selectVideoMode.h */,
+				BA6274B61D201B2300C7408A /* selectVideoMode.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -459,7 +366,7 @@
 			);
 			name = AlarmClock;
 			productName = AlarmClock;
-			productReference = BB34F0FF1703CAD3006EF991 /* 闹钟360.app */;
+			productReference = BB34F0FF1703CAD3006EF991 /* 影像闹钟.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -472,7 +379,7 @@
 				ORGANIZATIONNAME = "Jon Bauer";
 				TargetAttributes = {
 					BB34F0FE1703CAD3006EF991 = {
-						DevelopmentTeam = CSRZWBWL27;
+						DevelopmentTeam = Z3VGL34GCF;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -505,78 +412,48 @@
 			files = (
 				9211BCBD1D195A560064F049 /* 1-A.png in Resources */,
 				9211BCC41D195A560064F049 /* 7-A.png in Resources */,
-				BA7F95911D15AAE6005BF144 /* 8-B.tga in Resources */,
 				92F9D03D1D1A79910075A7E5 /* 1-C.png in Resources */,
 				9211BCC51D195A560064F049 /* 8-A.png in Resources */,
-				BA7F95921D15AAE6005BF144 /* 8-C.tga in Resources */,
-				BA7F958F1D15AAE6005BF144 /* 7-C.tga in Resources */,
-				BA7F958E1D15AAE6005BF144 /* 7-B.tga in Resources */,
 				BA103CC41D1D7329009AD29B /* 字母LOGO_UP.mov in Resources */,
-				BA7F95841D15AAE6005BF144 /* 4-A.tga in Resources */,
-				BA7F957F1D15AAE6005BF144 /* 2-B.tga in Resources */,
 				BA103CCC1D1E58E1009AD29B /* Ocenary_Logo_03.png in Resources */,
 				92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */,
 				BB34F10D1703CAD4006EF991 /* InfoPlist.strings in Resources */,
 				9211BCC11D195A560064F049 /* 4-A.png in Resources */,
-				BA7F95771D15AAE6005BF144 /* 0-C.tga in Resources */,
 				BB34F1151703CAD4006EF991 /* Default.png in Resources */,
 				92F9D03E1D1A79910075A7E5 /* 2-C.png in Resources */,
 				BAB307C91D1C3CF500BB47EA /* 图形LOGO2.mov in Resources */,
 				BA103CCA1D1E58E1009AD29B /* Ocenary_Logo_01.png in Resources */,
 				9211BCC61D195A560064F049 /* 9-A.png in Resources */,
-				BA7F957D1D15AAE6005BF144 /* 10-C.tga in Resources */,
-				BA7F95951D15AAE6005BF144 /* 9-C.tga in Resources */,
 				9211BCC31D195A560064F049 /* 6-A.png in Resources */,
 				9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */,
-				BA7F957A1D15AAE6005BF144 /* 1-C.tga in Resources */,
-				BA7F95831D15AAE6005BF144 /* 3-C.tga in Resources */,
-				BA7F95811D15AAE6005BF144 /* 3-A.tga in Resources */,
 				92F9D0441D1A79910075A7E5 /* 8-C.png in Resources */,
 				92F9D03C1D1A79910075A7E5 /* 0-C.png in Resources */,
 				92F9D0431D1A79910075A7E5 /* 7-C.png in Resources */,
-				BA7F95881D15AAE6005BF144 /* 5-B.tga in Resources */,
-				BA7F95891D15AAE6005BF144 /* 5-C.tga in Resources */,
+				BA6274BA1D2020F900C7408A /* 预约结算3.png in Resources */,
 				92F9D0411D1A79910075A7E5 /* 5-C.png in Resources */,
 				92F9D0401D1A79910075A7E5 /* 4-C.png in Resources */,
-				BA7F957C1D15AAE6005BF144 /* 10-B.tga in Resources */,
-				BA7F95861D15AAE6005BF144 /* 4-C.tga in Resources */,
 				BB34F1171703CAD4006EF991 /* Default@2x.png in Resources */,
-				BA7F957B1D15AAE6005BF144 /* 10-A.tga in Resources */,
 				92F9D0451D1A79910075A7E5 /* 9-C.png in Resources */,
 				BA103CC31D1D7329009AD29B /* 图形LOGO_UP.mov in Resources */,
-				BA7F95851D15AAE6005BF144 /* 4-B.tga in Resources */,
 				92F9D0461D1A79910075A7E5 /* 10-C.png in Resources */,
-				BA7F95781D15AAE6005BF144 /* 1-A.tga in Resources */,
-				BA7F95761D15AAE6005BF144 /* 0-B.tga in Resources */,
 				BAB005771D199552009EC0B3 /* App_icon.png in Resources */,
 				92F9D03F1D1A79910075A7E5 /* 3-C.png in Resources */,
-				BA7F958B1D15AAE6005BF144 /* 6-B.tga in Resources */,
 				9211BCBE1D195A560064F049 /* 10-A.png in Resources */,
-				BA7F95901D15AAE6005BF144 /* 8-A.tga in Resources */,
-				BA7F95941D15AAE6005BF144 /* 9-B.tga in Resources */,
-				BA7F95821D15AAE6005BF144 /* 3-B.tga in Resources */,
-				BA7F958C1D15AAE6005BF144 /* 6-C.tga in Resources */,
-				BA7F958A1D15AAE6005BF144 /* 6-A.tga in Resources */,
 				9211BCBC1D195A560064F049 /* 0-A.png in Resources */,
-				BA7F958D1D15AAE6005BF144 /* 7-A.tga in Resources */,
 				92F9D0421D1A79910075A7E5 /* 6-C.png in Resources */,
-				BA7F95801D15AAE6005BF144 /* 2-C.tga in Resources */,
 				BA103CDC1D1EAFC2009AD29B /* homeBG.png in Resources */,
 				9211BCC01D195A560064F049 /* 3-A.png in Resources */,
-				BA7F95871D15AAE6005BF144 /* 5-A.tga in Resources */,
 				9211BCBF1D195A560064F049 /* 2-A.png in Resources */,
+				BA6274BD1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov in Resources */,
 				BB34F1191703CAD4006EF991 /* Default-568h@2x.png in Resources */,
 				BB34F11C1703CAD4006EF991 /* MainStoryboard.storyboard in Resources */,
+				BA6274BB1D2020F900C7408A /* 预约结算4.png in Resources */,
 				BB34F1261703CB2B006EF991 /* digital-7.ttf in Resources */,
-				BA7F95791D15AAE6005BF144 /* 1-B.tga in Resources */,
 				BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */,
 				BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */,
 				BBFD0EC8171FA49D00F7C664 /* Best_Morning_Alarm.m4r in Resources */,
 				BA103CC61D1E56DF009AD29B /* launchHD5_5.png in Resources */,
-				BA7F95751D15AAE6005BF144 /* 0-A.tga in Resources */,
 				9211BCC21D195A560064F049 /* 5-A.png in Resources */,
-				BA7F95931D15AAE6005BF144 /* 9-A.tga in Resources */,
-				BA7F957E1D15AAE6005BF144 /* 2-A.tga in Resources */,
 				BAB307C71D1C34AC00BB47EA /* 字母LOGO.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +469,7 @@
 				92F9D0301D1A66680075A7E5 /* UIWindow+PazLabs.m in Sources */,
 				BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */,
 				BB34F1131703CAD4006EF991 /* AppDelegate.m in Sources */,
+				BA6274B71D201B2300C7408A /* selectVideoMode.m in Sources */,
 				92F9D04A1D1A842B0075A7E5 /* TPFInfoShareManager.m in Sources */,
 				9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */,
 				BB34F11F1703CAD4006EF991 /* HomeViewController.m in Sources */,
@@ -697,8 +575,8 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
-				PRODUCT_NAME = "闹钟360";
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock.enterprise;
+				PRODUCT_NAME = "影像闹钟";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;
@@ -718,8 +596,8 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
-				PRODUCT_NAME = "闹钟360";
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock.enterprise;
+				PRODUCT_NAME = "影像闹钟";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
 				WRAPPER_EXTENSION = app;

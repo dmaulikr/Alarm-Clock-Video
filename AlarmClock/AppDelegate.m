@@ -16,7 +16,7 @@
 - (void)setupWindow
 {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];    
-    VideoPlayerController *videoPlayerController =  [[VideoPlayerController alloc] init];
+    VideoPlayerController *videoPlayerController =  [[VideoPlayerController alloc] initWithMode:[self getVideoSelectMode]];
     
 	self.window.rootViewController = videoPlayerController;
 	[self.window makeKeyAndVisible];
@@ -200,6 +200,20 @@
     [self lightMaskView];
 
 }
+-(VideoSelectMode)getVideoSelectMode{
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *value  = [userDefaults valueForKey:@"selectVideoMode"];
+    
+    VideoSelectMode videoSelectMode;
+    
+    if(!value || [value isEqualToString:@"1"])
+        videoSelectMode = VideoSelectModeOne;
+    else
+        videoSelectMode = VideoSelectModeTwo;
+    
+    return videoSelectMode;
+}
 
 #pragma mark getter
 
@@ -207,12 +221,12 @@
 
     if(!player){
     
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
-        
-        NSURL *file = [[NSURL alloc] initFileURLWithPath:path];
-        
-        self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
-        self.player.numberOfLoops = MAXFLOAT;
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"Best_Morning_Alarm" ofType:@"m4r"];
+//        
+//        NSURL *file = [[NSURL alloc] initFileURLWithPath:path];
+//        
+//        self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+//        self.player.numberOfLoops = MAXFLOAT;
 
     }
 
@@ -232,7 +246,9 @@
     [self.player prepareToPlay];
     [self.player play];
     
-    _videoPlayerController =  [[VideoPlayerController alloc] init];
+
+    
+    _videoPlayerController =  [[VideoPlayerController alloc] initWithMode:[self getVideoSelectMode]];
     _videoPlayerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     /*for testing when we stupidly are setting duplicate alarms*/
