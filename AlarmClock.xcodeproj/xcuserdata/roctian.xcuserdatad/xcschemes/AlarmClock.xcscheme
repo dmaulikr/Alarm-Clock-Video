@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB34F0FE1703CAD3006EF991"
-               BuildableName = "AlarmClock.app"
+               BuildableName = "&#x5f71;&#x50cf;&#x95f9;&#x949f;.app"
                BlueprintName = "AlarmClock"
                ReferencedContainer = "container:AlarmClock.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB34F0FE1703CAD3006EF991"
-            BuildableName = "AlarmClock.app"
+            BuildableName = "&#x5f71;&#x50cf;&#x95f9;&#x949f;.app"
             BlueprintName = "AlarmClock"
             ReferencedContainer = "container:AlarmClock.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB34F0FE1703CAD3006EF991"
-            BuildableName = "AlarmClock.app"
+            BuildableName = "&#x5f71;&#x50cf;&#x95f9;&#x949f;.app"
             BlueprintName = "AlarmClock"
             ReferencedContainer = "container:AlarmClock.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB34F0FE1703CAD3006EF991"
-            BuildableName = "AlarmClock.app"
+            BuildableName = "&#x5f71;&#x50cf;&#x95f9;&#x949f;.app"
             BlueprintName = "AlarmClock"
             ReferencedContainer = "container:AlarmClock.xcodeproj">
          </BuildableReference>

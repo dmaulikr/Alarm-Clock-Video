@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9202DC6B1D181D11004ACA8F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */; };
-		9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */; };
 		9202DC741D181FF3004ACA8F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202DC731D181FF3004ACA8F /* VideoPlayerController.m */; };
 		9211BCBC1D195A560064F049 /* 0-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB11D195A560064F049 /* 0-A.png */; };
 		9211BCBD1D195A560064F049 /* 1-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB21D195A560064F049 /* 1-A.png */; };
@@ -21,6 +20,7 @@
 		9211BCC41D195A560064F049 /* 7-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCB91D195A560064F049 /* 7-A.png */; };
 		9211BCC51D195A560064F049 /* 8-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBA1D195A560064F049 /* 8-A.png */; };
 		9211BCC61D195A560064F049 /* 9-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 9211BCBB1D195A560064F049 /* 9-A.png */; };
+		921298461D20F7BF0073EDBC /* 幻影闹钟_UP.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 921298451D20F7BF0073EDBC /* 幻影闹钟_UP.mp4 */; };
 		92F9D02D1D1A5B050075A7E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F9D02C1D1A5B050075A7E5 /* Images.xcassets */; };
 		92F9D0301D1A66680075A7E5 /* UIWindow+PazLabs.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */; };
 		92F9D03C1D1A79910075A7E5 /* 0-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F9D0311D1A79910075A7E5 /* 0-C.png */; };
@@ -41,13 +41,11 @@
 		BA103CCA1D1E58E1009AD29B /* Ocenary_Logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */; };
 		BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */; };
 		BA103CCC1D1E58E1009AD29B /* Ocenary_Logo_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */; };
-		BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */; };
 		BA103CDC1D1EAFC2009AD29B /* homeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA103CDB1D1EAFC2009AD29B /* homeBG.png */; };
 		BA29B5A71D197C8C006CD04B /* TPFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29B5A61D197C8C006CD04B /* TPFTimerView.m */; };
 		BA6274B71D201B2300C7408A /* selectVideoMode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6274B61D201B2300C7408A /* selectVideoMode.m */; };
 		BA6274BA1D2020F900C7408A /* 预约结算3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274B81D2020F900C7408A /* 预约结算3.png */; };
 		BA6274BB1D2020F900C7408A /* 预约结算4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274B91D2020F900C7408A /* 预约结算4.png */; };
-		BA6274BD1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov in Resources */ = {isa = PBXBuildFile; fileRef = BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */; };
 		BA6274C71D20358D00C7408A /* Alarm_icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274BF1D20358D00C7408A /* Alarm_icon512.png */; };
 		BA6274C81D20358D00C7408A /* App_Icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274C01D20358D00C7408A /* App_Icon29.png */; };
 		BA6274C91D20358D00C7408A /* App_Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6274C11D20358D00C7408A /* App_Icon29@2x.png */; };
@@ -82,7 +80,6 @@
 
 /* Begin PBXFileReference section */
 		9202DC6A1D181D11004ACA8F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0002.mov; sourceTree = "<group>"; };
 		9202DC721D181FF3004ACA8F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
 		9202DC731D181FF3004ACA8F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
 		9211BCB11D195A560064F049 /* 0-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-A.png"; sourceTree = "<group>"; };
@@ -96,6 +93,7 @@
 		9211BCB91D195A560064F049 /* 7-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-A.png"; sourceTree = "<group>"; };
 		9211BCBA1D195A560064F049 /* 8-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-A.png"; sourceTree = "<group>"; };
 		9211BCBB1D195A560064F049 /* 9-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-A.png"; sourceTree = "<group>"; };
+		921298451D20F7BF0073EDBC /* 幻影闹钟_UP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "幻影闹钟_UP.mp4"; sourceTree = "<group>"; };
 		92F9D02C1D1A5B050075A7E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92F9D02E1D1A66680075A7E5 /* UIWindow+PazLabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PazLabs.h"; sourceTree = "<group>"; };
 		92F9D02F1D1A66680075A7E5 /* UIWindow+PazLabs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PazLabs.m"; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_01.png; sourceTree = "<group>"; };
 		BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_02.png; sourceTree = "<group>"; };
 		BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ocenary_Logo_03.png; sourceTree = "<group>"; };
-		BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_32px_1199961_easyicon.net.png; sourceTree = "<group>"; };
 		BA103CDB1D1EAFC2009AD29B /* homeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBG.png; sourceTree = "<group>"; };
 		BA29B5A51D197C8C006CD04B /* TPFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFTimerView.h; sourceTree = "<group>"; };
 		BA29B5A61D197C8C006CD04B /* TPFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFTimerView.m; sourceTree = "<group>"; };
@@ -126,7 +123,6 @@
 		BA6274B61D201B2300C7408A /* selectVideoMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectVideoMode.m; sourceTree = "<group>"; };
 		BA6274B81D2020F900C7408A /* 预约结算3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预约结算3.png"; sourceTree = "<group>"; };
 		BA6274B91D2020F900C7408A /* 预约结算4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预约结算4.png"; sourceTree = "<group>"; };
-		BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "图形LOGO正面-MOV_01.mov"; sourceTree = "<group>"; };
 		BA6274BF1D20358D00C7408A /* Alarm_icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alarm_icon512.png; sourceTree = "<group>"; };
 		BA6274C01D20358D00C7408A /* App_Icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Icon29.png; sourceTree = "<group>"; };
 		BA6274C11D20358D00C7408A /* App_Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_Icon29@2x.png"; sourceTree = "<group>"; };
@@ -188,12 +184,11 @@
 		9202DC6C1D181D5D004ACA8F /* video */ = {
 			isa = PBXGroup;
 			children = (
-				BA6274BC1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov */,
+				921298451D20F7BF0073EDBC /* 幻影闹钟_UP.mp4 */,
 				BA103CC11D1D7329009AD29B /* 图形LOGO_UP.mov */,
 				BA103CC21D1D7329009AD29B /* 字母LOGO_UP.mov */,
 				BAB307C61D1C34AC00BB47EA /* 字母LOGO.mov */,
 				BAB307C81D1C3CF500BB47EA /* 图形LOGO2.mov */,
-				9202DC6D1D181D5D004ACA8F /* IMG_0002.mov */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -314,7 +309,6 @@
 				BA6274B81D2020F900C7408A /* 预约结算3.png */,
 				BA6274B91D2020F900C7408A /* 预约结算4.png */,
 				BA103CDB1D1EAFC2009AD29B /* homeBG.png */,
-				BA103CCF1D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png */,
 				BA103CC71D1E58E1009AD29B /* Ocenary_Logo_01.png */,
 				BA103CC81D1E58E1009AD29B /* Ocenary_Logo_02.png */,
 				BA103CC91D1E58E1009AD29B /* Ocenary_Logo_03.png */,
@@ -411,7 +405,7 @@
 				ORGANIZATIONNAME = "Jon Bauer";
 				TargetAttributes = {
 					BB34F0FE1703CAD3006EF991 = {
-						DevelopmentTeam = Z3VGL34GCF;
+						DevelopmentTeam = CSRZWBWL27;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -459,7 +453,6 @@
 				9211BCC61D195A560064F049 /* 9-A.png in Resources */,
 				BA6274CC1D20358D00C7408A /* App_Icon40@3x.png in Resources */,
 				9211BCC31D195A560064F049 /* 6-A.png in Resources */,
-				9202DC6E1D181D5D004ACA8F /* IMG_0002.mov in Resources */,
 				92F9D0441D1A79910075A7E5 /* 8-C.png in Resources */,
 				92F9D03C1D1A79910075A7E5 /* 0-C.png in Resources */,
 				BA6274CA1D20358D00C7408A /* App_Icon29@3x.png in Resources */,
@@ -469,6 +462,7 @@
 				92F9D0401D1A79910075A7E5 /* 4-C.png in Resources */,
 				BB34F1171703CAD4006EF991 /* Default@2x.png in Resources */,
 				92F9D0451D1A79910075A7E5 /* 9-C.png in Resources */,
+				921298461D20F7BF0073EDBC /* 幻影闹钟_UP.mp4 in Resources */,
 				BA103CC31D1D7329009AD29B /* 图形LOGO_UP.mov in Resources */,
 				BA6274C81D20358D00C7408A /* App_Icon29.png in Resources */,
 				92F9D0461D1A79910075A7E5 /* 10-C.png in Resources */,
@@ -482,14 +476,12 @@
 				BA6274CB1D20358D00C7408A /* App_Icon40@2x.png in Resources */,
 				BA6274C91D20358D00C7408A /* App_Icon29@2x.png in Resources */,
 				9211BCBF1D195A560064F049 /* 2-A.png in Resources */,
-				BA6274BD1D20273C00C7408A /* 图形LOGO正面-MOV_01.mov in Resources */,
 				BA6274C71D20358D00C7408A /* Alarm_icon512.png in Resources */,
 				BB34F1191703CAD4006EF991 /* Default-568h@2x.png in Resources */,
 				BB34F11C1703CAD4006EF991 /* MainStoryboard.storyboard in Resources */,
 				BA6274BB1D2020F900C7408A /* 预约结算4.png in Resources */,
 				BB34F1261703CB2B006EF991 /* digital-7.ttf in Resources */,
 				BA6274CE1D20358D00C7408A /* App_Icon60@3x.png in Resources */,
-				BA103CD01D1E61C9009AD29B /* play_button_32px_1199961_easyicon.net.png in Resources */,
 				BA103CCB1D1E58E1009AD29B /* Ocenary_Logo_02.png in Resources */,
 				BBFD0EC8171FA49D00F7C664 /* Best_Morning_Alarm.m4r in Resources */,
 				BA103CC61D1E56DF009AD29B /* launchHD5_5.png in Resources */,
@@ -615,7 +607,7 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock.enterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
 				PRODUCT_NAME = "影像闹钟";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;
@@ -636,7 +628,7 @@
 				GCC_PREFIX_HEADER = "AlarmClock/AlarmClock-Prefix.pch";
 				INFOPLIST_FILE = "AlarmClock/AlarmClock-Info.plist";
 				INSTALL_OWNER = "$(USER)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock.enterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.video.alarmClock;
 				PRODUCT_NAME = "影像闹钟";
 				PROVISIONING_PROFILE = "";
 				VERSION_INFO_BUILDER = bizzl3;

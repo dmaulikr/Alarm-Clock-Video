@@ -37,6 +37,8 @@
     
 	// Do any additional setup after loading the view.
     
+    [timeToSetOff setLocale:[NSLocale systemLocale]];
+    
     //Edit mode is only true when an existing alarm is pressed
     if (self.editMode)
     {

@@ -99,7 +99,9 @@
         
     else{
     
-        path = [myBundle pathForResource:@"图形LOGO正面-MOV_01" ofType:@"mov"];
+//        图形LOGO正面-MP4_01.mp4
+        
+        path = [myBundle pathForResource:@"幻影闹钟_UP" ofType:@"mp4"];
         [self.view addSubview:self.normalRightTimerView];
     }
     
@@ -288,7 +290,7 @@
     if(!_normalRightTimerView){
         
         
-        _normalRightTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,_timerViewWidth, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionNormal];
+        _normalRightTimerView = [[TPFTimerView alloc] initWithFrame:CGRectMake(0,0,_timerViewWidth, _timerViewHeight) imageType:ImageTypeA timerPosition:TimerPositionRight];
         
         //        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
         //        [_leftTimerView setTransform:transform];
